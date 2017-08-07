@@ -1,2 +1,34 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class= "banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path "homeless.jpg" %>);">
+  <div class="banner-content">
+    <h1><i class="fa fa-paper-plane" aria-hidden="true"></i>RiSE</h1>
+    <p class="big p"> Provide food, goods, skills or hospitality to people in need</p>
+   <form class="form-inline" id="ButtonGeoloc">
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Where?">
+  </div>
+  <button type="submit" class="btn btn-yours" id="btn-map" onclick="window.open('map.html')">Find</button>
+  </div>
+</form>
+  </div>
+
+<div class="container" id="home-giders">
+  <h5> <class="text-center"> How was your experience as a RiSEr ?</h5>
+  <div class="row">
+    <% @feedbacks.each do |gider| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class="testimonial">
+                        <div class="pic">
+                            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gider[:name]}" %>
+                        </div>
+                        <h3 class="testimonial-title"><%= gider[:name] %></h3>
+                        <small class="post"><%= gider[:role] %></small>
+                        <p class="description">
+                            <%= gider[:description][0..100] %>...
+                        </p>
+                    </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
