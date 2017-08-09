@@ -2,11 +2,11 @@
   <div class="banner-content">
     <h1><i class="fa fa-paper-plane" aria-hidden="true"></i>RiSE</h1>
     <p class="big p"> Provide food, goods, skills or hospitality to people in need</p>
-   <form class="form-inline" id="ButtonGeoloc">
+   <form class="form-inline" action="/map" method="get"id="ButtonGeoloc">
   <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Where?">
+    <input type="text" class="form-control" name="input" id="exampleInputName2" placeholder="Where?">
   </div>
-  <button type="submit" class="btn btn-yours" id="btn-map" onclick="window.open('map.html')">Find</button>
+  <button type="submit" class="btn btn-yours" id="btn-map">  <%= link_to "Find", homelesses_path %> </button>
   </div>
 </form>
   </div>

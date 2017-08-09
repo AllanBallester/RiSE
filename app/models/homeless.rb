@@ -1,0 +1,2 @@
+class Homeless < ApplicationRecord
+end
