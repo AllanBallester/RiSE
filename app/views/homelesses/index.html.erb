@@ -3,12 +3,15 @@
  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuLStTlfI2-db0vmAwwENL7MKNFN3q1YY&callback=initMap">
     </script>
+<div>
+<%= link_to "Add a new homeless", new_homeless_path %>
+</div>
 
 <div>
-  <%= link_to "Add a new homeless", new_homeless_path %>
   <% @homelesses.each do |homeless| %>
   <p> <%= homeless.name %> </p>
   <p> <%= homeless.story[0..20] %> </p>
+  <p> <%= link_to "View", homeless_path(homeless) %>
   <% end %>
 </div>
 

@@ -4,7 +4,8 @@ class HomelessesController < ApplicationController
   end
 
   def show
-    @homeless = Homeless.find(params[:id])
+    @homeless = Homeless.includes(:reviews).find(params[:id])
+    @review = Review.new
   end
 
   def new

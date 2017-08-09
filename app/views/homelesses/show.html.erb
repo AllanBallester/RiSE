@@ -1,21 +1,10 @@
 
-<div id="map"></div>
+<%= @homeless.name %>
+<%= @homeless.story %>
 
- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuLStTlfI2-db0vmAwwENL7MKNFN3q1YY&callback=initMap">
-    </script>
+<p> <%= link_to "Create a review", new_homeless_review_path(@homeless) %> </p>
 
-<div>
-  <% @tasks.each do |task| %>
-  <%= link_to "Add a new homeless", new_homeless_path %>
-  <% end %>
-</div>
+<% @homeless.reviews.each do |review| %>
+<%= review.content %>
+<% end %>
 
-
-
-    <!-- TODO: Put your HTML code in here -->
-
-<!--
-    Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-
-    <script src="javascripts/application.js"></script>
