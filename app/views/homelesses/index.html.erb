@@ -3,15 +3,16 @@
  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuLStTlfI2-db0vmAwwENL7MKNFN3q1YY&callback=initMap">
     </script>
-<div>
-<%= link_to "Add a new homeless", new_homeless_path %>
+<div class= "text-center">
+<h5> Wants to contribute to help more Rised around the world ? </h5>
+<button type="submit" class="btn btn-yours" id="btn-map"> <%= link_to "Add a new homeless", new_homeless_path %> </button>
 </div>
 
 <div>
   <% @homelesses.each do |homeless| %>
   <p> <%= homeless.name %> </p>
   <p> <%= homeless.story[0..20] %> </p>
-  <p> <%= link_to "View", homeless_path(homeless) %>
+  <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
   <% end %>
 </div>
 
