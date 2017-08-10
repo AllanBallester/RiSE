@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170809201137) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "homelesses", force: :cascade do |t|
     t.string   "name"
     t.text     "story"
@@ -24,7 +27,8 @@ ActiveRecord::Schema.define(version: 20170809201137) do
     t.text     "content"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["homeless_id"], name: "index_reviews_on_homeless_id"
+    t.index ["homeless_id"], name: "index_reviews_on_homeless_id", using: :btree
   end
 
+  add_foreign_key "reviews", "homelesses"
 end
