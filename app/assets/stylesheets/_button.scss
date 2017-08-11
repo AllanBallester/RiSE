@@ -22,8 +22,13 @@
   padding : 6.5px 18px;
   text-align: center;
   margin : 8px;
+  transition: all ease 0.3s;
 }
 
-.btn-yours:hover {
-  background-color: #627384 ;
+.fa-map-marker {
+  font-size: 20px;
 }
+
+// .btn-yours:hover {
+//   background-color: ;
+// }

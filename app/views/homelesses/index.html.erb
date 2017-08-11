@@ -4,12 +4,15 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuLStTlfI2-db0vmAwwENL7MKNFN3q1YY&callback=initMap">
     </script>
 <div class= "text-center">
-<h5> Wants to contribute to help more Rised around the world ? </h5>
-<button type="submit" class="btn btn-yours" id="btn-map"> <%= link_to "Add a new homeless", new_homeless_path %> </button>
+  <h5 class= "map-text"> Wants to contribute to help more Rised around the world ? </h5>
+  <%= link_to "Add a new homeless", new_homeless_path, class: "btn btn-yours" %>
 </div>
 
 <div>
   <% @homelesses.each do |homeless| %>
+    <% if homeless.photos.any? %>
+  <%= cl_image_tag homeless.photos.last.picture, height: 300, width: 400, crop: :fill %>
+  <% end %>
   <p> <%= homeless.name %> </p>
   <p> <%= homeless.story[0..20] %> </p>
   <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>

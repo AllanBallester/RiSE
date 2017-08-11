@@ -6,16 +6,18 @@ class HomelessesController < ApplicationController
   def show
     @homeless = Homeless.includes(:reviews).find(params[:id])
     @review = Review.new
+    @photo = Photo.new
   end
 
   def new
     @homeless= Homeless.new
+    @photo = Photo.new
   end
 
   def create
     @homeless = Homeless.new(homeless_params)
     @homeless.save
-    redirect_to homelesses_path
+    redirect_to homeless_path(@homeless)
   end
 
   def edit

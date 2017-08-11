@@ -11,10 +11,17 @@ class ReviewsController < ApplicationController
     redirect_to homeless_path(@review.homeless)
   end
 
+  def update
+    @review = Review.find(params[:id])
+    @review.update(review_params)
+    redirect_to review_path(@review)
+  end
+
+
   def review_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
-    params.require(:review).permit(:content)
+    params.require(:review).permit(:content, :picture, :picture_cache)
 end
 
 end

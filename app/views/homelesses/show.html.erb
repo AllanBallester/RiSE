@@ -1,3 +1,12 @@
+<% if @homeless.photos.any? %>
+<%= cl_image_tag @homeless.photos.last.picture, height: 300, width: 400, crop: :fill %>
+<% end %>
+
+<%= simple_form_for [@homeless, @photo] do |f| %>
+  <%= f.input :picture %>
+  <%= f.input :picture_cache, as: :hidden %>
+  <%= f.submit %>
+<% end %>
 
 <%= @homeless.name %>
 <%= @homeless.story %>

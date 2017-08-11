@@ -1,0 +1,2 @@
+class Riser < ApplicationRecord
+end
