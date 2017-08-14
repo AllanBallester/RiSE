@@ -23,11 +23,6 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'figaro'
-gem 'cloudinary'
-gem 'carrierwave', '~> 0.11.2'
-
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -64,3 +59,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Custom gems
+
+gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
+gem 'devise'

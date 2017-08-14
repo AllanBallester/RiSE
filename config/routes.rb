@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :risers
   get 'reviews/new'
 
 root to: "pages#home"
