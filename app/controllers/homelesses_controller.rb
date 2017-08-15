@@ -1,4 +1,6 @@
 class HomelessesController < ApplicationController
+  before_action :authenticate_riser!, only: [:new, :create]
+
   def index
     @homelesses = Homeless.all
   end

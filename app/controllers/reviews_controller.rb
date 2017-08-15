@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_riser!, only: [:new, :create]
+
   def new
     @review = Review.new
     @homeless = Homeless.find(params[:homeless_id])
