@@ -1,31 +1,54 @@
 <div id="map"></div>
 
- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuLStTlfI2-db0vmAwwENL7MKNFN3q1YY&callback=initMap">
-    </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuLStTlfI2-db0vmAwwENL7MKNFN3q1YY&callback=initMap">
+</script>
 <div class= "text-center">
   <h5 class= "map-text"> Wants to contribute to help more Rised around the world ? </h5>
   <%= link_to "Add a new homeless", new_homeless_path, class: "btn btn-yours btn-find" %>
 </div>
 
-<div>
-  <% @homelesses.each do |homeless| %>
-    <% if homeless.photos.any? %>
-  <%= cl_image_tag homeless.photos.last.picture, height: 300, width: 400, crop: :fill %>
-  <% end %>
-  <p> <%= homeless.name %> </p>
-  <p> <%= homeless.story[0..20] %> </p>
-  <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
-  <% end %>
+<div class="container" id="home-giders">
+  <div class="row">
+    <% @homelesses.each do |homeless| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class="testimonial">
+                        <div class="pic">
+                        <% if homeless.photos.any? %>
+                            <%= cl_image_tag homeless.photos.last.picture %>
+                        <% end %>
+                        </div>
+                        <h3 class="testimonial-title"><%= homeless[:name] %></h3>
+                        <p class="description">
+                            <%= homeless[:story][0..100] %>...
+                        </p>
+                        <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
+                    </div>
+      </div>
+    <% end %>
+  </div>
 </div>
 
+<!-- <div class = "container-index">
+  <% @homelesses.each do |homeless| %>
+    <% if homeless.photos.any? %>
+      <%= cl_image_tag homeless.photos.last.picture, height: 300, width: 400, crop: :fill, class:"picture-index" %>
+    <% end %>
+    <div class = "description-homeless">
+      <p> <%= homeless.name %> </p>
+      <p> <%= homeless.story[0..20] %> </p>
+    </div>
+
+  <% end %>
+</div> -->
 
 
-    <!-- TODO: Put your HTML code in here -->
+
+<!-- TODO: Put your HTML code in here -->
 
 <!--
-    Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
 
-    <script src="javascripts/application.js"></script>
+  <script src="javascripts/application.js"></script>
 
 

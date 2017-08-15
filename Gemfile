@@ -66,3 +66,8 @@ gem 'figaro'
 gem 'cloudinary'
 gem 'carrierwave', '~> 0.11.2'
 gem 'devise'
+gem 'omniauth-facebook'
+
+gem 'better_errors'
+gem 'binding_of_caller'
+
