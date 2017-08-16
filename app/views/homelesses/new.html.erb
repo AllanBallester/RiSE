@@ -1,14 +1,46 @@
+<h5 class="sign-in-title"> Kind gesture. THe more infos = the best help !! </h5>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
 <%= form_for(@homeless) do |t| %>
+  <div class = "sign-in-text">
   <%= t.label :name %>
   <%= t.text_field :name %>
-  <%= t.label :story %>
-  <%= t.text_field :story %>
+  </div>
+
+  <div class="sign-in-text">
+    <%= t.label :last_name %>
+  <%= t.text_field :last_name %>
+  </div>
+
+  <div class="sign-in-text">
+    <%= t.label :story %>
+  <%= t.text_area :story, rows: 10, cols: 25 %>
+  </div>
+
+  <div class="sign-in-text">
   <%= t.label :location %>
   <%= t.text_field :location, class: "location" %>
-  <%= t.submit %>
+  </div>
+
+  <div class="sign-in-text">
+    <%= t.label :phone %>
+  <%= t.text_field :phone %>
+  </div>
+
+
+  <div class="sign-in-text">
+    <%= t.label :fb_account, "Facebook account" %>
+  <%= t.text_field :fb_account %>
+  </div>
+
+  <%= t.submit "Well done", class: "btn-yours btn-login"%>
 <% end %>
 
-
+</div>
+  </div>
+</div>
 
 
 
