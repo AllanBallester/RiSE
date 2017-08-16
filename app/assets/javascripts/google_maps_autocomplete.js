@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var homeless_location = $('#homeless_location').get(0);
+  var homeless_location = $('.location').get(0);
 
   if (homeless_location) {
     var autocomplete = new google.maps.places.Autocomplete(homeless_location, { types: ['geocode'] });
