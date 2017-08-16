@@ -17,24 +17,3 @@
 //= require underscore
 //= require gmaps/google
 //= require_tree .
-
-// $("#ButtonGeoloc").submit(function(event){
-//   // I trigger the AJAX query
-//   event.preventDefault()
-//   var input = $("#exampleInputName2").val()
-//   $.ajax( {
-//     type: "GET",
-//     url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + input,
-//     success : function( data ) {
-//         console.log( data );
-//         // Access to the long and lat
-//     var latitude = data.results[0].geometry.location.lat
-//     var longitude = data.results[0].geometry.location.lng
-//     $("#latitude").text(latitude)
-//     $("#longitude").text(longitude)
-//     pinMap (latitude, longitude)
-//     }
-// } );
-
-  //console.log what you get back from the API (success callback )
-// });
