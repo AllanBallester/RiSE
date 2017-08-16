@@ -13,60 +13,28 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-
 //= require bootstrap-sprockets
-
-
-
-
-
-
-
-
-
+//= require underscore
+//= require gmaps/google
 //= require_tree .
 
-var map = null
-var marker = null
-
-$("#ButtonGeoloc").submit(function(event){
-  // I trigger the AJAX query
-  event.preventDefault()
-  var input = $("#exampleInputName2").val()
-  $.ajax( {
-    type: "GET",
-    url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + input,
-    success : function( data ) {
-        console.log( data );
-        // Access to the long and lat
-    var latitude = data.results[0].geometry.location.lat
-    var longitude = data.results[0].geometry.location.lng
-    $("#latitude").text(latitude)
-    $("#longitude").text(longitude)
-    pinMap (latitude, longitude)
-    }
-} );
+// $("#ButtonGeoloc").submit(function(event){
+//   // I trigger the AJAX query
+//   event.preventDefault()
+//   var input = $("#exampleInputName2").val()
+//   $.ajax( {
+//     type: "GET",
+//     url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + input,
+//     success : function( data ) {
+//         console.log( data );
+//         // Access to the long and lat
+//     var latitude = data.results[0].geometry.location.lat
+//     var longitude = data.results[0].geometry.location.lng
+//     $("#latitude").text(latitude)
+//     $("#longitude").text(longitude)
+//     pinMap (latitude, longitude)
+//     }
+// } );
 
   //console.log what you get back from the API (success callback )
-});
-
-function initMap() {
-        var uluru = {lat: 0, lng: 0};
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: uluru
-        });
-
-      }
-
-function pinMap(latitude, longitude) {
-    if (marker != null) {
-      marker.setMap(null)
-    }
-    marker = new google.maps.Marker({
-          position: {lat: latitude, lng: longitude},
-          map: map
-        });
-    map.setZoom(6)
-    map.setCenter({lat: latitude, lng: longitude})
-}
+// });

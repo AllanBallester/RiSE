@@ -5,5 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Homeless.destroy_all
 
-Homeless.create({name: "Francisco", story: "lorem fefe fe fe f e"})
+Homeless.create({name: "Francisco", story: "lorem fefe fe fe f e", location: "Rue du repos, Lyon"})
+Homeless.create({name: "Francisco", story: "lorem fefe fe fe f e", location: "Rue du repos, Lyon"})
+Homeless.create({name: "Francisco", story: "lorem fefe fe fe f e", location: "Rue des 3 pierres, Lyon"})
+Homeless.create({name: "Francisco", story: "lorem fefe fe fe f e", location: "Rue de l'Université, Lyon"})
