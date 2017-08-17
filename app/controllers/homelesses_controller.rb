@@ -1,5 +1,5 @@
 class HomelessesController < ApplicationController
-  before_action :authenticate_riser!, only: [:new, :create]
+  before_action :authenticate_riser!, only: [:new, :create, :edit]
 
   def index
     @homelesses = Homeless.near(params[:location], 30)
@@ -15,6 +15,7 @@ class HomelessesController < ApplicationController
     @homeless = Homeless.includes(:reviews).find(params[:id])
     @review = Review.new
     @photo = Photo.new
+
   end
 
   def new
@@ -36,7 +37,8 @@ class HomelessesController < ApplicationController
     @homeless = Homeless.find(params[:id])
     @homeless.update(homeless_params)
 
-    redirect_to homelesses_path # We'll see that in a moment.
+    redirect_to homeless_path(@homeless)
+ # We'll see that in a moment.
   end
 
 private

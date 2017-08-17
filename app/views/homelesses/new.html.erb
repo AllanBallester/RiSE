@@ -3,42 +3,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4">
-<%= form_for(@homeless) do |t| %>
-  <div class = "sign-in-text">
-  <%= t.label :name %>
-  <%= t.text_field :name , placeholder: "Peter"%>
-  </div>
-
-  <div class="sign-in-text">
-    <%= t.label :last_name %>
-  <%= t.text_field :last_name, placeholder: "Parker"%>
-  </div>
-<!--
-  <div class="sign-in-text">
-    <%= t.label :story %>
-  <%= t.text_area :story, rows: 10, cols: 25 %>
-  </div> -->
-
-  <div class="sign-in-text"> <i class="fa fa-map-marker" aria-hidden="true"></i>
-  <%= t.label :location %>
-  <%= t.text_field :location, :size => 50, class: "location"%>
-  </div>
-
-  <div class="sign-in-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
-    <%= t.label :phone %>
-  <%= t.text_field :phone, placeholder: "+() 5455664455 "%>
-  </div>
-
-
-  <div class="sign-in-text"> <i class="fa fa-facebook-official blue-button" aria-hidden="true"></i>
-    <%= t.label :fb_account, "Facebook account" %>
-  <%= t.text_field :fb_account, placeholder: "If not, leave it blank"%>
-  </div>
-
-  <%= t.submit "Add a Rised", class: "btn-yours btn-login"%>
-<% end %>
-
-</div>
+      <%= render partial: "form" %>
+    </div>
   </div>
 </div>
 

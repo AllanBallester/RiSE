@@ -113,6 +113,47 @@ h6 {
 }
 
 
+.rised{
+    background: #fff;
+    text-align: center;
+    padding: 40px 20%;
+    border-radius: 5px;
+    margin : 12px;
+}
+.rised .pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.rised .pic img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+.rised .rised-title{
+    font-size: 16px;
+    color: #9e9e9e;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.rised .post{
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #bcbcbc;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.rised .description{
+    font-size: 15px;
+    font-style: italic;
+    color: #86868a;
+    line-height: 1.8;
+    margin-top: 10px;
+}
 
 #map {
    width: 100%;
@@ -243,8 +284,4 @@ h6 {
   color: black;
   padding : 5px;
   text-align: 100%;
-}
-
-.blue-button {
-  font-color: blue;
 }

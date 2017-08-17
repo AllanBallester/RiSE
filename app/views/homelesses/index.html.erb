@@ -23,23 +23,23 @@ handler.getMap().setZoom(14);
 <% end %>
 
 <div class= "text-center">
-  <h5 class= "map-text"> Wants to contribute to help the worlwide Rised ? </h5>
-  <%= link_to "Add a new Rised", new_homeless_path, class: "btn btn-yours btn-find" %>
+  <h5 class= "map-text "> Wants to contribute to help the worlwide Rised ? </h5>
+  <%= link_to "Add a new Rised", new_homeless_path, class: "btn btn-yours btn-find " %>
 </div>
 
 <div class="container" id="home-giders">
   <div class="row">
     <% @homelesses.each do |homeless| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="testimonial">
+        <div class="rised">
           <div class="pic">
             <% if homeless.photos.any? %>
               <%= cl_image_tag homeless.photos.last.picture %>
             <% end %>
           </div>
-          <h3 class="testimonial-title"><%= homeless[:name] %></h3>
+          <h3 class="rised-title"><%= homeless.name %></h3>
           <p class="description">
-            <%= homeless[:story][0..100] %>...
+            <%= truncate(homeless.story, length: 50) %>...
           </p>
           <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
         </div>
@@ -55,7 +55,7 @@ handler.getMap().setZoom(14);
     <% end %>
     <div class = "description-homeless">
       <p> <%= homeless.name %> </p>
-      <p> <%= homeless.story[0..20] %> </p>
+      <p> <%= homeless.story %> </p>
     </div>
 
   <% end %>

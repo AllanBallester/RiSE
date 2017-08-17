@@ -1,13 +1,4 @@
 <%= form_for(@homeless) do |t| %>
-  <div class = "sign-in-text">
-  <%= t.label :name %>
-  <%= t.text_field :name , placeholder: "Peter"%>
-  </div>
-
-  <div class="sign-in-text">
-    <%= t.label :last_name %>
-  <%= t.text_field :last_name, placeholder: "Parker"%>
-  </div>
 <!--
   <div class="sign-in-text">
     <%= t.label :story %>
@@ -24,16 +15,10 @@
   <%= t.text_field :phone, placeholder: "+() 5455664455 "%>
   </div>
 
-
-  <div class="sign-in-text"> <i class="fa fa-facebook-official blue-button" aria-hidden="true"></i>
-    <%= t.label :fb_account, "Facebook account" %>
-  <%= t.text_field :fb_account, placeholder: "If not, leave it blank"%>
-  </div>
-
-  <div class="sign-in-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  <div class="sign-in-text"> <i class="fa fa-comment-o" aria-hidden="true"></i>
     <%= t.label :story %>
   <%= t.text_area :story, placeholder: "Optional "%>
   </div>
 
-  <%= t.submit "Add a Rised", class: "btn-yours btn-login"%>
+  <%= t.submit "Edit Rised infos", class: "btn-yours btn-login"%>
 <% end %>

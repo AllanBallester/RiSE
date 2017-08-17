@@ -26,4 +26,8 @@ class Riser < ApplicationRecord
 
     return riser
   end
+
+  def picture
+    facebook_picture_url || "https://i.stack.imgur.com/HQwHI.jpg"
+  end
 end

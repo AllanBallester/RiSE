@@ -1,4 +1,5 @@
 class PhotosController < ApplicationController
+before_action :authenticate_riser!, only: [:new, :create, :update]
 
   def new
     @photo = Photo.new

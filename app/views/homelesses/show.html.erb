@@ -1,19 +1,76 @@
-<% if @homeless.photos.any? %>
-<%= cl_image_tag @homeless.photos.last.picture, height: 300, width: 400, crop: :fill %>
-<% end %>
 
-<%= simple_form_for [@homeless, @photo] do |f| %>
-  <%= f.input :picture %>
-  <%= f.input :picture_cache, as: :hidden %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <div class= "avatar avatar-big">
+        <% if @homeless.photos.any? %>
+        <%= cl_image_tag @homeless.photos.last.picture, height: 120, width: 120, crop: :fill %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-<%= @homeless.name %>
-<%= @homeless.story %>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+     <div class="sign-in-text text-center">
+       <h5> <%= @homeless.name%> <%= @homeless.last_name %> </h5>
+       </div>
+   </div>
+ </div>
 
-<p> <%= link_to "Create a review", new_homeless_review_path(@homeless) %> </p>
+ <div class="row">
+  <div class="col-sm-6">
+    <div class= "sign-in-text">
+      <% if @homeless.story.present? %>
+      <p> <strong> Story </strong> </p>
+      <%= @homeless.story %>
+      <%= link_to 'Edit', edit_homeless_path(@homeless) %>
+      <% else %>
+      <%= link_to 'Create', edit_homeless_path(@homeless) %>
+      <% end  %>
+    </div>
+  </div>
 
-<% @homeless.reviews.each do |review| %>
-<%= review.content %>
-<% end %>
+  <div class="col-sm-4 col-sm-offset-2">
+    <div class= "sign-in-text">
+      <%= simple_form_for [@homeless, @photo] do |f| %>
+      <%= f.input :picture, label: 'Add/Upload a Profile picture' %>
+      <%= f.input :picture_cache, as: :hidden %>
+      <%= f.submit "Update Profile Picture" %>
+      <% end %>
+    </div>
 
+  </div>
+</div>
+</div>
+
+<div class= "text-center">
+<p> <%= link_to "Contact Rised", new_homeless_review_path(@homeless), class: "btn btn-yours btn-contact" %> </p>
+<div>
+
+
+
+<div id="map" style="width: 100%; height: 200px;"> </div>
+
+<div class= "text-center">
+<p> <%= link_to "Create a review", new_homeless_review_path(@homeless), class: "btn btn-yours btn-show " %> </p>
+<div>
+
+<div class="container">
+  <div class="row">
+    <% @homeless.reviews.last(3).each do |review| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="testimonial">
+          <div class="pic">
+            <%= image_tag review.riser.picture %>
+          </div>
+          <h3 class="testimonial-title"><%= review.riser.name %></h3>
+          <!-- <small class="post"></small> -->
+          <p class="description">
+            <%= review.content.truncate(100) %>...
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

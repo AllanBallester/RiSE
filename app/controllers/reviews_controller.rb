@@ -9,6 +9,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     @review.homeless = Homeless.find(params[:homeless_id])
+    @review.riser = current_riser
     @review.save
     redirect_to homeless_path(@review.homeless)
   end
