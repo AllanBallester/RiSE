@@ -23,14 +23,14 @@ handler.getMap().setZoom(14);
 <% end %>
 
 <div class= "text-center">
-  <h5 class= "map-text "> Wants to contribute to help the worlwide Rised ? </h5>
+  <h5 class= "map-text "> One Rised not listed ? Com'on do not wait more : </h5>
   <%= link_to "Add a new Rised", new_homeless_path, class: "btn btn-yours btn-find " %>
 </div>
 
 <div class="container" id="home-giders">
   <div class="row">
     <% @homelesses.each do |homeless| %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="rised">
           <div class="pic">
             <% if homeless.photos.any? %>
@@ -39,9 +39,9 @@ handler.getMap().setZoom(14);
           </div>
           <h3 class="rised-title"><%= homeless.name %></h3>
           <p class="description">
-            <%= truncate(homeless.story, length: 50) %>...
+            <%= truncate(homeless.story, length: 100) %>...
           </p>
-          <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
+          <%= link_to "View", homeless_path(homeless), class:"btn btn-yours" %> </button>
         </div>
       </div>
     <% end %>

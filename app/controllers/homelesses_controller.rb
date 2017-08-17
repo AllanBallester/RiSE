@@ -2,7 +2,7 @@ class HomelessesController < ApplicationController
   before_action :authenticate_riser!, only: [:new, :create, :edit]
 
   def index
-    @homelesses = Homeless.near(params[:location], 30)
+    @homelesses = Homeless.near(params[:location], 200)
 
     @hash = Gmaps4rails.build_markers(@homelesses) do |homeless, marker|
       marker.lat homeless.latitude
@@ -15,6 +15,12 @@ class HomelessesController < ApplicationController
     @homeless = Homeless.includes(:reviews).find(params[:id])
     @review = Review.new
     @photo = Photo.new
+
+    @hash = Gmaps4rails.build_markers(@homelesses) do |homeless, marker|
+      marker.lat homeless.latitude
+      marker.lng homeless.longitude
+      # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+    end
 
   end
 
