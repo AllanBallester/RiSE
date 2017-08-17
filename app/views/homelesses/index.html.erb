@@ -1,25 +1,25 @@
 <div id="map" style="width: 100%; height: 400px;"></div>
 
 <% content_for(:after_js) do %>
-  <%= javascript_tag do %>
-    $(document).ready(function() {
-      var handler = Gmaps.build('Google',
-      {markers:
-          {clusterer: {
-            gridSize: 200,
-            maxZoom: 10}}});
-      handler.buildMap({internal: { id: 'map' } }, function() {
-        markers = handler.addMarkers(<%= raw @hash.to_json %>);
-        handler.bounds.extendWith(markers);
-        handler.fitMapToBounds();
-        if (markers.length == 0) {
-          handler.getMap().setZoom(2);
-        } else if (markers.length == 1) {
-          handler.getMap().setZoom(14);
-        }
-      });
-    });
-  <% end %>
+<%= javascript_tag do %>
+$(document).ready(function() {
+var handler = Gmaps.build('Google',
+{markers:
+  {clusterer: {
+  gridSize: 200,
+  maxZoom: 10}}});
+  handler.buildMap({internal: { id: 'map' } }, function() {
+  markers = handler.addMarkers(<%= raw @hash.to_json %>);
+  handler.bounds.extendWith(markers);
+  handler.fitMapToBounds();
+  if (markers.length == 0) {
+  handler.getMap().setZoom(2);
+} else if (markers.length == 1) {
+handler.getMap().setZoom(14);
+}
+});
+});
+<% end %>
 <% end %>
 
 <div class= "text-center">
@@ -31,18 +31,18 @@
   <div class="row">
     <% @homelesses.each do |homeless| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-       <div class="testimonial">
-                        <div class="pic">
-                        <% if homeless.photos.any? %>
-                            <%= cl_image_tag homeless.photos.last.picture %>
-                        <% end %>
-                        </div>
-                        <h3 class="testimonial-title"><%= homeless[:name] %></h3>
-                        <p class="description">
-                            <%= homeless[:story][0..100] %>...
-                        </p>
-                        <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
-                    </div>
+        <div class="testimonial">
+          <div class="pic">
+            <% if homeless.photos.any? %>
+              <%= cl_image_tag homeless.photos.last.picture %>
+            <% end %>
+          </div>
+          <h3 class="testimonial-title"><%= homeless[:name] %></h3>
+          <p class="description">
+            <%= homeless[:story][0..100] %>...
+          </p>
+          <button type="submit" class="btn btn-yours"> <%= link_to "View", homeless_path(homeless) %> </button>
+        </div>
       </div>
     <% end %>
   </div>
