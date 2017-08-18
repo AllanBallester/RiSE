@@ -4,6 +4,7 @@ class ReviewsController < ApplicationController
   def new
     @review = Review.new
     @homeless = Homeless.find(params[:homeless_id])
+    @photo = Photo.new
   end
 
   def create

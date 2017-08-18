@@ -1,5 +1,17 @@
-<%= simple_form_for [@homeless, @review] do |t| %>
-  <%= t.input :content %>
-  <%= t.submit %>
-<% end %>
+<h5 class="sign-in-title">Give your review !!!</h5>
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+    <div class="sign-in-text">
+      <%= simple_form_for [@homeless, @review] do |t| %>
+        <%= t.input :content %>
+        <%= t.input :picture, label: 'Add/Upload a Review picture' %>
+        <%= t.input :picture_cache, as: :hidden %>
+
+        <%= t.submit "Create the Review", class: "btn-yours btn-login" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>

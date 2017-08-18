@@ -113,9 +113,9 @@
 <p> <%= link_to "Create a review", new_homeless_review_path(@homeless), class: "btn btn-yours btn-show " %> </p>
 <div>
 
-<div class="container">
-  <div class="row">
-    <% @homeless.reviews.last(3).each do |review| %>
+  <div class="container">
+    <div class="row">
+      <% @homeless.reviews.last(3).each do |review| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="testimonial">
           <div class="pic">
@@ -126,10 +126,12 @@
           <p class="description">
             <%= review.content.truncate(100) %>...
           </p>
+            <%= image_tag review.picture, class: "img-responsive img-center" %>
         </div>
+
       </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
-</div>
 
 
