@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  riser: one
+  homeless: one
+  content: MyString
+
+two:
+  riser: two
+  homeless: two
+  content: MyString

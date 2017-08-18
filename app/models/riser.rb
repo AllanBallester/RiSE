@@ -1,4 +1,6 @@
 class Riser < ApplicationRecord
+
+  has_many :intentions
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

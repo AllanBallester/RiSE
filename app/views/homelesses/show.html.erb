@@ -45,33 +45,66 @@
 </div>
 
 <div class= "text-center">
-<p> <%= link_to "Contact Rised", new_homeless_review_path(@homeless), class: "btn btn-yours btn-contact" %> </p>
+  <% if riser_signed_in? %>
+    <button id="myBtn" class="btn btn-yours btn-contact" >Contact Rised </button>
+  <%else%>
+    <%= link_to "Contact Rised", new_riser_session_path , class: "btn btn-yours btn-contact" %>
+    </p>
+  <% end %>
 <div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal" role="dialog">
+  <!-- Modal content -->
+    <div class="modal-content" id="homeless_modal">
+      <%= simple_form_for(@intention, remote: true, url: create_interest_homeless_path(@homeless)) do |f| %>
+        <%= f.input :content, collection: Intention::OPTIONS %>
+        <%= f.submit "Get the contact" %>
+      <% end %>
+    </div>
+</div>
 
 
 <div id="map" style="width: 100%; height: 200px;"></div>
 
 <% content_for(:after_js) do %>
-<%= javascript_tag do %>
-$(document).ready(function() {
-var handler = Gmaps.build('Google',
-{markers:
-  {clusterer: {
-  gridSize: 200,
-  maxZoom: 10}}});
-  handler.buildMap({internal: { id: 'map' } }, function() {
-  markers = handler.addMarkers(<%= raw @hash.to_json %>);
-  handler.bounds.extendWith(markers);
-  handler.fitMapToBounds();
-  if (markers.length == 0) {
-  handler.getMap().setZoom(2);
-} else if (markers.length == 1) {
-handler.getMap().setZoom(14);
-}
-});
-});
-<% end %>
+  <%= javascript_tag do %>
+    $(document).ready(function() {
+      var handler = Gmaps.build('Google',
+        {markers:
+          {clusterer: {
+          gridSize: 200,
+          maxZoom: 10}}});
+          handler.buildMap({internal: { id: 'map' } }, function() {
+          markers = handler.addMarkers(<%= raw @hash.to_json %>);
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
+          if (markers.length == 0) {
+            handler.getMap().setZoom(2);
+          } else if (markers.length == 1) {
+          handler.getMap().setZoom(14);
+          }
+      });
+    });
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  <% end %>
 <% end %>
 
 
@@ -82,7 +115,7 @@ handler.getMap().setZoom(14);
 
 <div class="container">
   <div class="row">
-    <% @homeless.reviews.last(6).each do |review| %>
+    <% @homeless.reviews.last(3).each do |review| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="testimonial">
           <div class="pic">
@@ -98,3 +131,5 @@ handler.getMap().setZoom(14);
     <% end %>
   </div>
 </div>
+
+

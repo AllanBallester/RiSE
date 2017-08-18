@@ -1,0 +1,11 @@
+<% if @homeless.phone.present? %>
+  $("#homeless_modal").html(" <p class='homeless_phone'> <%= j @homeless.phone %> </p> <p> <%= j @homeless.fb_account %> </p> <span class='close'>Close</span>")
+<% else %>
+  var str = "<p> Not contact infos yet, Geolocalisation is your friend then !!! </p> <span class='close'>Close</span>";
+  $("#homeless_modal").html(str);
+<% end %>
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}

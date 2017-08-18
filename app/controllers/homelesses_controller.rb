@@ -15,8 +15,9 @@ class HomelessesController < ApplicationController
     @homeless = Homeless.includes(:reviews).find(params[:id])
     @review = Review.new
     @photo = Photo.new
+    @intention = Intention.new
 
-    @hash = Gmaps4rails.build_markers(@homelesses) do |homeless, marker|
+    @hash = Gmaps4rails.build_markers(@homeless) do |homeless, marker|
       marker.lat homeless.latitude
       marker.lng homeless.longitude
       # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
@@ -45,6 +46,17 @@ class HomelessesController < ApplicationController
 
     redirect_to homeless_path(@homeless)
  # We'll see that in a moment.
+  end
+
+  def create_interest
+    @homeless = Homeless.find(params[:id])
+    @intention = @homeless.intentions.new(content: params["intention"]["content"],
+                                          riser: current_riser)
+    @intention.save
+
+    respond_to do |format|
+      format.js
+    end
   end
 
 private
