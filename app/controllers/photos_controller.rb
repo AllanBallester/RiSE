@@ -12,8 +12,8 @@ before_action :authenticate_riser!, only: [:new, :create, :update]
     if @photo.save
       redirect_to homeless_path(@photo.homeless)
     else
-      puts @photo.errors.messages
-      render :new
+      flash[:alert] = "Oops !!! And your picture ?"
+      redirect_to homeless_path(@photo.homeless)
     end
   end
 

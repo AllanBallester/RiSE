@@ -4,20 +4,39 @@
     <%= t.label :story %>
   <%= t.text_area :story, rows: 10, cols: 25 %>
   </div> -->
+<div class = "sign-in-text form-group row">
+  <%= t.label :name %>
+  <div class="col-10">
+  <%= t.text_field :name , placeholder: "Peter", class: "form-control"%>
+  </div>
+  </div>
 
-  <div class="sign-in-text"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+  <div class="sign-in-text form-group row">
+    <%= t.label :last_name %>
+    <div class="col-10">
+  <%= t.text_field :last_name, placeholder: "Parker", class: "form-control"%>
+  </div>
+  </div>
+
+  <div class="sign-in-text form-group row"> <i class="fa fa-map-marker" aria-hidden="true"></i>
   <%= t.label :location %>
-  <%= t.text_field :location, :size => 50, class: "location"%>
+  <div class="col-10">
+  <%= t.text_field :location, :size => 50, class: "location form-control"%>
+  </div>
   </div>
 
-  <div class="sign-in-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  <div class="sign-in-text form-group row"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
     <%= t.label :phone %>
-  <%= t.text_field :phone, placeholder: "+() 5455664455 "%>
+    <div class="col-10">
+  <%= t.text_field :phone, placeholder: "+() 5455664455 ", class: "form-control"%>
+  </div>
   </div>
 
-  <div class="sign-in-text"> <i class="fa fa-comment-o" aria-hidden="true"></i>
+<div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
     <%= t.label :story %>
-  <%= t.text_area :story, size: "49x5" %>
+    <div class="col-10">
+  <%= t.text_area :story,  placeholder: "Optional", class: "form-control" %>
+  </div>
   </div>
 
   <%= t.submit "Edit Rised infos", class: "btn-yours btn-login"%>

@@ -24,7 +24,6 @@
       <% if @homeless.story.present? %>
       <p> <strong> Story </strong> </p>
       <%= @homeless.story %>
-      <%= link_to 'Edit', edit_homeless_path(@homeless) %>
       <% else %>
       <%= link_to 'Create', edit_homeless_path(@homeless) %>
       <% end  %>
@@ -39,8 +38,9 @@
       <%= f.submit "Update Profile Picture" %>
       <% end %>
     </div>
-
+<%= link_to 'Edit Rised', edit_homeless_path(@homeless), class: "btn bten-yours btn-primary btn-edit" %>
   </div>
+
 </div>
 </div>
 
@@ -58,8 +58,9 @@
   <!-- Modal content -->
     <div class="modal-content" id="homeless_modal">
       <%= simple_form_for(@intention, remote: true, url: create_interest_homeless_path(@homeless)) do |f| %>
-        <%= f.input :content, collection: Intention::OPTIONS %>
-        <%= f.submit "Get the contact" %>
+        <%= f.input :content, label: "Choose your intention", collection: Intention::OPTIONS, input_html: {class:"sign-in-text"}, label_html: {class:"sign-in-text"} %>
+        <div id="error-message"> </div>
+        <%= f.submit "Get the contact", class:"btn btn-primary" %>
       <% end %>
     </div>
 </div>
