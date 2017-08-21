@@ -1,3 +1,5 @@
+<% content_for :title, "#{@homeless.name} #{@homeless.last_name}" %>
+
 
 <div class="container">
   <div class="row">
@@ -25,7 +27,7 @@
       <p> <strong> Story </strong> </p>
       <%= @homeless.story %>
       <% else %>
-      <%= link_to 'Create', edit_homeless_path(@homeless) %>
+      <%= link_to 'Create Story', edit_homeless_path(@homeless), class: "btn btn-primary" %>
       <% end  %>
     </div>
   </div>
@@ -38,7 +40,7 @@
       <%= f.submit "Update Profile Picture" %>
       <% end %>
     </div>
-<%= link_to 'Edit Rised', edit_homeless_path(@homeless), class: "btn bten-yours btn-primary btn-edit" %>
+<%= link_to 'Edit Rised', edit_homeless_path(@homeless), class: "btn btn-primary btn-edit" %>
   </div>
 
 </div>

@@ -11,8 +11,12 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.homeless = Homeless.find(params[:homeless_id])
     @review.riser = current_riser
-    @review.save
+    if @review.save
     redirect_to homeless_path(@review.homeless)
+    else
+    flash[:alert] = "Why an empty review? Whyyyyyy ?"
+    redirect_to new_homeless_review_path
+  end
   end
 
   def update

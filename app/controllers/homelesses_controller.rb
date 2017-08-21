@@ -32,8 +32,16 @@ class HomelessesController < ApplicationController
 
   def create
     @homeless = Homeless.new(homeless_params)
-    @homeless.save
-    redirect_to homeless_path(@homeless)
+    if @homeless.save
+      redirect_to homeless_path(@homeless)
+    elsif Homeless.where(name:@homeless.name, last_name:@homeless.last_name).present?
+      flash[:alert] = "Oops !!! The Riser already exist. Find him/her on HomePage and update location. Job done !!"
+      redirect_to new_homeless_path
+    else
+      # flash[:alert] = "Oops !!! Infos are missing. At least name, last name and Location dear Risers !!"
+      # redirect_to new_homeless_path
+      render 'new'
+    end
   end
 
   def edit

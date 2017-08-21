@@ -1,43 +1,51 @@
-<%= form_for(@homeless) do |t| %>
+<%= simple_form_for(@homeless) do |t| %>
+
+  <div class = "sign-in-text form-group row">
+  <div class="col-10">
+  <%= t.input :name , placeholder: "Peter", input_html:{class: "form-control"}%>
+  </div>
+  </div>
+
+  <div class="sign-in-text form-group row">
+    <div class="col-10">
+  <%= t.input :last_name, placeholder: "Parker", input_html:{class: "form-control"}%>
+  </div>
+  </div>
 <!--
   <div class="sign-in-text">
     <%= t.label :story %>
   <%= t.text_area :story, rows: 10, cols: 25 %>
   </div> -->
-<div class = "sign-in-text form-group row">
-  <%= t.label :name %>
-  <div class="col-10">
-  <%= t.text_field :name , placeholder: "Peter", class: "form-control"%>
-  </div>
-  </div>
-
-  <div class="sign-in-text form-group row">
-    <%= t.label :last_name %>
-    <div class="col-10">
-  <%= t.text_field :last_name, placeholder: "Parker", class: "form-control"%>
-  </div>
-  </div>
 
   <div class="sign-in-text form-group row"> <i class="fa fa-map-marker" aria-hidden="true"></i>
-  <%= t.label :location %>
+  <label for="location">Location*</label>
   <div class="col-10">
-  <%= t.text_field :location, :size => 50, class: "location form-control"%>
+  <%= t.input :location, label: false, :size => 50, input_html:{class: "location form-control"}%>
   </div>
   </div>
 
+  <% if @homeless.intentions.where(riser: current_riser).present? %>
   <div class="sign-in-text form-group row"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
-    <%= t.label :phone %>
+    <label for="phone">Phone</label>
     <div class="col-10">
-  <%= t.text_field :phone, placeholder: "+() 5455664455 ", class: "form-control"%>
+  <%= t.input :phone, label: false, placeholder: "+() 5455664455 ", input_html:{class: "form-control"}%>
   </div>
   </div>
 
-<div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
-    <%= t.label :story %>
+  <div class="sign-in-text form-group row"> <i class="fa fa-facebook-official blue-button" aria-hidden="true"></i>
+  <label for="fb_account">Facebook account</label>
     <div class="col-10">
-  <%= t.text_area :story,  placeholder: "Optional", class: "form-control" %>
+  <%= t.input :fb_account, label: false, placeholder: "If not, leave it blank", input_html:{class: "form-control"}%>
+  </div>
+  </div>
+  <%end %>
+
+  <div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
+    <label for="fb_account">Story</label>
+    <div class="col-10">
+  <%= t.input :story, label: false,  placeholder: "Optional", input_html:{class: "form-control"} %>
   </div>
   </div>
 
-  <%= t.submit "Edit Rised infos", class: "btn-yours btn-login"%>
+  <%= t.submit "Edit Rised", class: "btn-yours btn-login"%>
 <% end %>
