@@ -1,4 +1,4 @@
-<% content_for :title, "Homelesses Giving Platform - Rise" %>
+<% content_for :title, "Homelesses Giving and Sharing Platform - Rise" %>
 
 <div class= "banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path "homeless.jpg" %>);">
   <div class="banner-content">
@@ -14,7 +14,7 @@
   </div>
 
 <div class = "text-center">
-<button type="submit" class="btn btn-yours btn-find" id="btn-map"> <i class="fa fa-map-marker" aria-hidden="true"></i> Update Rised' Location</button>
+<%= link_to "Update Rised Location", search_homelesses_path, class: "btn btn-yours btn-find " %>
  </div>
 
 <div class="container" id="home-giders">

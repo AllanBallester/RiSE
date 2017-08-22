@@ -1,0 +1,11 @@
+<%= simple_form_for(@homeless) do |t| %>
+
+  <div class="sign-in-text form-group row"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+  <label for="location">New Location ?*</label>
+  <div class="col-10">
+  <%= t.input :location, label: false, :size => 50, input_html:{class: "location form-control"}%>
+  </div>
+  </div>
+
+  <%= t.submit "Update location", class: "btn-yours btn-login"%>
+<% end %>

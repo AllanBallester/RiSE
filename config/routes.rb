@@ -10,6 +10,10 @@ root to: "pages#home"
     member do
       post "create_interest"
     end
+    collection do
+      get "search"
+      get "retrieve"
+    end
     resources :reviews, only: [:new, :create, :index, :update]
     resources :photos, only: [:new, :create, :update]
   end

@@ -67,6 +67,16 @@ class HomelessesController < ApplicationController
     end
   end
 
+  def search
+  end
+
+  def retrieve
+    @homeless = Homeless.where("name = ? AND last_name = ? ", params[:name], params[:last_name]).first
+    respond_to do |format|
+      format.js
+    end
+  end
+
 private
 
   def homeless_params
