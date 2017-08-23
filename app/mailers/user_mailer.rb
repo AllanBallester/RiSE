@@ -18,7 +18,8 @@ class UserMailer < ApplicationMailer
     mail(to: @riser.email, subject: 'Your Presence matter')
   end
 
-  def add_rised(riser)
+  def add_rised(riser, homeless)
+    @homeless = homeless
     @riser = riser
 
     mail(to: @riser.email, subject: 'Your Action matter')

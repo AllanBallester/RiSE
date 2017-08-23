@@ -15,7 +15,7 @@ class Homeless < ApplicationRecord
   after_validation :geocode, if: :location_changed?
 
   def send_add_rised_email
-    UserMailer.add_rised(riser).deliver_now
+    UserMailer.add_rised(riser, self).deliver_now
   end
 
 end
