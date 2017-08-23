@@ -4,6 +4,7 @@ class Homeless < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :photos, dependent: :destroy
   has_many :intentions
+  belongs_to :riser
 
   validates :name, presence: true
   validates :last_name, presence: true
@@ -14,7 +15,7 @@ class Homeless < ApplicationRecord
   after_validation :geocode, if: :location_changed?
 
   def send_add_rised_email
-    UserMailer.add_rised(self).deliver_now
+    UserMailer.add_rised(riser).deliver_now
   end
 
 end

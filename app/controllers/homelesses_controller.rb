@@ -32,6 +32,7 @@ class HomelessesController < ApplicationController
 
   def create
     @homeless = Homeless.new(homeless_params)
+    @homeless.riser = current_riser
     if @homeless.save
       redirect_to homeless_path(@homeless)
     elsif Homeless.where(name:@homeless.name, last_name:@homeless.last_name).present?

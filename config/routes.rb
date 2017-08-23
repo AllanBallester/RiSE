@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :risers,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
+  get '/pages/our_story'
   get '/pages/join_us'
   get 'reviews/new'
 

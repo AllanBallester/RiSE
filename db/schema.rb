@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170823142914) do
+ActiveRecord::Schema.define(version: 20170823183856) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20170823142914) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "location"
+    t.integer  "riser_id"
+    t.index ["riser_id"], name: "index_homelesses_on_riser_id", using: :btree
   end
 
   create_table "intentions", force: :cascade do |t|
@@ -88,6 +90,7 @@ ActiveRecord::Schema.define(version: 20170823142914) do
     t.index ["reset_password_token"], name: "index_risers_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "homelesses", "risers"
   add_foreign_key "intentions", "homelesses"
   add_foreign_key "intentions", "risers"
   add_foreign_key "photos", "homelesses"
