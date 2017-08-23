@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ForestLiana::Engine => '/forest'
   devise_for :risers,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 

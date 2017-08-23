@@ -73,6 +73,8 @@ gem 'binding_of_caller'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'postmark-rails'
+gem 'forest_liana'
+
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
