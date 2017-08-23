@@ -61,14 +61,12 @@ class HomelessesController < ApplicationController
     @homeless = Homeless.find(params[:id])
     @intention = @homeless.intentions.new(content: params["intention"]["content"],
                                           riser: current_riser)
-    @intention.save
-
+    if @intention.save
+      UserMailer.review(current_riser, @homeless).deliver_now
+    end
     respond_to do |format|
       format.js
     end
-
-    UserMailer.review(current_riser).deliver_now
-
   end
 
   def search
