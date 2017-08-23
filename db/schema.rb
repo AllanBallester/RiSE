@@ -51,10 +51,10 @@ ActiveRecord::Schema.define(version: 20170823142914) do
   create_table "reviews", force: :cascade do |t|
     t.integer  "homeless_id"
     t.text     "content"
+    t.string   "picture"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "riser_id"
-    t.string   "picture"
     t.index ["homeless_id"], name: "index_reviews_on_homeless_id", using: :btree
     t.index ["riser_id"], name: "index_reviews_on_riser_id", using: :btree
   end
@@ -80,8 +80,6 @@ ActiveRecord::Schema.define(version: 20170823142914) do
     t.string   "first_name"
     t.string   "token"
     t.datetime "token_expiry"
-    t.float    "latitude"
-    t.float    "longitude"
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"

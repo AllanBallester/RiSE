@@ -3,6 +3,7 @@ class CreateReviews < ActiveRecord::Migration[5.0]
     create_table :reviews do |t|
       t.references :homeless, foreign_key: true
       t.text :content
+      t.string :photo
 
       t.timestamps
     end
