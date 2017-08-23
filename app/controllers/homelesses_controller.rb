@@ -65,6 +65,9 @@ class HomelessesController < ApplicationController
     respond_to do |format|
       format.js
     end
+
+    UserMailer.review(current_riser).deliver_now
+
   end
 
   def search

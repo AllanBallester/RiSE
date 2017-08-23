@@ -1,4 +1,6 @@
 class Homeless < ApplicationRecord
+  after_create :send_add_rised_email
+
   has_many :reviews, dependent: :destroy
   has_many :photos, dependent: :destroy
   has_many :intentions
@@ -10,4 +12,10 @@ class Homeless < ApplicationRecord
 
   geocoded_by :location
   after_validation :geocode, if: :location_changed?
+
+  def send_add_rised_email
+    UserMailer.add_rised(self).deliver_now
+  end
+
 end
+

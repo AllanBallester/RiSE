@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :risers,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
+  get '/pages/join_us'
   get 'reviews/new'
 
 root to: "pages#home"

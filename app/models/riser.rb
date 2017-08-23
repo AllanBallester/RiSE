@@ -1,14 +1,11 @@
 class Riser < ApplicationRecord
-  after_create :send_confirm_email
   after_create :send_welcome_email
-  after_create :send_add_rised_email
-  after_create :send_review_email
 
 
   has_many :intentions
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  # :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]
 
@@ -40,19 +37,9 @@ class Riser < ApplicationRecord
 
 private
 
-  def send_confirm_email
-    UserMailer.confirm(self).deliver_now
-  end
 
   def send_welcome_email
     UserMailer.welcome(self).deliver_now
   end
 
-   def send_add_rised_email
-    UserMailer.add_rised(self).deliver_now
-  end
-
-   def send_review_email
-    UserMailer.review(self).deliver_now
-  end
 end
