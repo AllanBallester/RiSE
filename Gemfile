@@ -74,6 +74,8 @@ gem 'geocoder'
 gem 'gmaps4rails'
 gem 'postmark-rails'
 gem 'forest_liana'
+gem 'sidekiq'
+gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
 
 
 source 'https://rails-assets.org' do
