@@ -62,7 +62,7 @@ class HomelessesController < ApplicationController
     @intention = @homeless.intentions.new(content: params["intention"]["content"],
                                           riser: current_riser)
     if @intention.save
-      UserMailer.review(current_riser, @homeless).deliver_later!(wait_until: 48.hours.from_now)
+      UserMailer.review(current_riser, @homeless).deliver_now
     end
     respond_to do |format|
       format.js

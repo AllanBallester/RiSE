@@ -14,7 +14,8 @@ def welcome
 
   def add_rised
     user = Riser.first
-    UserMailer.confirm(user)
+    homeless = Homeless.first
+    UserMailer.add_rised(user, homeless)
   end
 
   def review
