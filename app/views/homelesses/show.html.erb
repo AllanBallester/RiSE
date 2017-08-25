@@ -9,10 +9,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class= "btn-back">
-<%= link_to 'Back to Map', homelesses_path %>
-</div>
-
 <div class="container">
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4">
@@ -53,7 +49,7 @@
       <%= f.submit "Update Profile Picture" %>
       <% end %>
     </div>
-<%= link_to 'Edit @homeless.name', edit_homeless_path(@homeless), class: "btn btn-primary btn-edit" %>
+<%= link_to "Edit #{@homeless.name}", edit_homeless_path(@homeless), class: "btn btn-primary btn-edit" %>
 
   </div>
 </div>
@@ -63,7 +59,7 @@
   <% if riser_signed_in? %>
     <button id="myBtn" class="btn btn-yours btn-contact" >Get <%=@homeless.name%> Contact </button>
   <%else%>
-    <%= link_to "Edit @homeless.name", new_riser_session_path , class: "btn btn-yours btn-contact" %>
+    <%= link_to "Contact #{@homeless.name}", new_riser_session_path , class: "btn btn-yours btn-contact" %>
     </p>
   <% end %>
 <div>
