@@ -13,9 +13,18 @@
     $(".alert.alert-warning.alert-dismissible").remove();
   }
 <% else %>
-
-  $(".navbar-wagon").after(' <div class="alert alert-warning alert-dismissible" role="alert"> \
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\
-    Try again with an other orthographe otherwise create it in the Map session\
-  </div>');
+  if($(".alert.alert-warning.alert-dismissible").length > 0) {
+    $(".alert.alert-warning.alert-dismissible").fadeOut("slow", function() {
+      $(".alert.alert-warning.alert-dismissible").remove();
+      $(".navbar-wagon").after(' <div class="alert alert-warning alert-dismissible" role="alert"> \
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\
+        Try again with an other orthographe otherwise create it in the Map session\
+      </div>');
+    });
+  } else {
+    $(".navbar-wagon").after(' <div class="alert alert-warning alert-dismissible" role="alert"> \
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\
+      Try again with an other orthographe otherwise create it in the Map session\
+    </div>');
+  }
 <% end %>
