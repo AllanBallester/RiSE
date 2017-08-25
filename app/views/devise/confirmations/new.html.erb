@@ -1,16 +1,23 @@
-<h2>Resend confirmation instructions</h2>
+<h5 class="sign-in-title"> Resend confirmation instructions</h5>
 
-<%= simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+  <%= simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
   <%= f.error_notification %>
   <%= f.full_error :confirmation_token %>
 
-  <div class="form-inputs">
+  <div class="form-inputs sign-in-text">
     <%= f.input :email, required: true, autofocus: true %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Resend confirmation instructions" %>
+    <%= f.button :submit, "Resend confirmation instructions", class:"btn-yours btn-signup" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+    </div>
+  </div>
+</div>
