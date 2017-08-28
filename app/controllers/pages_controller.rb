@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @feedbacks = [{name: "Alexandre",
+    @feedbacks = [{name: t("name"),
   description: " As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Miguel and give it to him. He was actually super cool and greetful.",
   location: "Lille - France",
   picture: "alexandre.png"},

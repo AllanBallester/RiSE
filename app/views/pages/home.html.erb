@@ -9,12 +9,12 @@
     })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-<% content_for :title, "Homelesses Giving and Sharing Platform - Rise" %>
+<% content_for :title, t("title") %>
 
 <div class= "banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1503935735/homeless_x9fd0x.jpg');">
   <div class="banner-content">
     <h1><i class="fa fa-paper-plane" aria-hidden="true"></i>RiSE</h1>
-    <p class="big p"> Give food, goods, skills or hospitality to people in need</p>
+    <p class="big p"> <%= t("baseline") %> </p>
    <form class="form-inline" action="/homelesses" method="get" id="ButtonGeoloc">
   <div class="form-group">
     <input type="text" class="form-control location" name="location" id="homeless_location" placeholder="Where?">
@@ -24,17 +24,19 @@
 </form>
   </div>
 
-<div class= "row">
+  <h5 class="bit-space"> RiSE is 100% collaborative.   </h5>
+
+  <div class= "row">
 <div class="col-xs-12 col-sm-6 col-md-6 text-center width-large">
-<div class= "banner-little" style="background-image: url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1503936118/7026647511_874d371160_b_l8xnba.jpg');">
-<%= link_to "Update Homeless position", search_homelesses_path, class: "btn btn-yours btn-find btn-card " %>
+<div class= "banner-little" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%),  url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1503944949/Hippie_naljjf.jpg');">
+<%= link_to "Update Homeless position", search_homelesses_path, class: "btn btn-card2 " %>
  </div>
  </div>
 
  <div class="col-xs-12 col-sm-6 col-md-6 text-center width-large">
- <div class= "banner-little" style="background-image: url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1503689864/Homeless01_rjiwso.jpg');">
-<%= link_to "Add new Homeless", new_homeless_path, class: "btn btn-yours btn-find btn-card " %>
- </div>
+  <div class= "banner-little" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%) , url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1503689864/Homeless01_rjiwso.jpg');">
+<%= link_to "Add new Homeless", new_homeless_path, class: "btn btn-card " %>
+  </div>
  </div>
  </div>
 
@@ -56,6 +58,7 @@
     <% end %>
   </div>
 </div>
+
 
 
 

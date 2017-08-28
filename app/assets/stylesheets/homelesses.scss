@@ -63,11 +63,16 @@ color: black;
  }
 
 .banner-little {
-  height: 30vh;
-  align-items: center;
+  height: 50vh;
+  background-repeat: none;
+  text-align: center;
   display: block;
   position: relative;
   width: 100%;
+  margin-top: 1em;
 }
 
 
+.bit-space {
+  margin-top:20px;
+}
