@@ -16,10 +16,23 @@ class HomelessesController < ApplicationController
     @review = Review.new
     @photo = Photo.new
     @intention = Intention.new
+    position_array = [{latitude: @homeless.latitude, longitude: @homeless.longitude, current: true}]
+    @homeless.position_histories.limit(4).each do |history|
+      position_array << {latitude: history.latitude, longitude: history.longitude, current: false}
+    end
 
-    @hash = Gmaps4rails.build_markers(@homeless) do |homeless, marker|
-      marker.lat homeless.latitude
-      marker.lng homeless.longitude
+    @hash = Gmaps4rails.build_markers(position_array) do |hash, marker|
+
+      if hash[:current].present?
+      marker.picture({
+        :url => "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=A|668CFF|000000", # up to you to pass the proper parameters in the url, I guess with a method from device
+        :width   => 32,
+        :height  => 32
+        })
+      end
+
+      marker.lat hash[:latitude]
+      marker.lng hash[:longitude]
       # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
     end
 

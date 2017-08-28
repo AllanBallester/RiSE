@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170824140325) do
+ActiveRecord::Schema.define(version: 20170828141557) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,16 @@ ActiveRecord::Schema.define(version: 20170824140325) do
     t.datetime "updated_at",  null: false
     t.index ["homeless_id"], name: "index_photos_on_homeless_id", using: :btree
     t.index ["riser_id"], name: "index_photos_on_riser_id", using: :btree
+  end
+
+  create_table "position_histories", force: :cascade do |t|
+    t.integer  "homeless_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "location"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["homeless_id"], name: "index_position_histories_on_homeless_id", using: :btree
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -96,6 +106,7 @@ ActiveRecord::Schema.define(version: 20170824140325) do
   add_foreign_key "intentions", "risers"
   add_foreign_key "photos", "homelesses"
   add_foreign_key "photos", "risers"
+  add_foreign_key "position_histories", "homelesses"
   add_foreign_key "reviews", "homelesses"
   add_foreign_key "reviews", "risers"
 end
