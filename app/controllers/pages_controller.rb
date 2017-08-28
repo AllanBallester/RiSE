@@ -1,16 +1,16 @@
 class PagesController < ApplicationController
   def home
-    @feedbacks = [{name: t("name"),
-  description: " As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Miguel and give it to him. He was actually super cool and greetful.",
-  location: "Lille - France",
+    @feedbacks = [{name: t("name1"),
+  description: t("description1"),
+  location: t("location1"),
   picture: "alexandre.png"},
-  {name: "Lea",
-  description: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Pedro, contact him and give it hand by hand.Now everyday",
-  location: "Ho Chi minh-Vietnam",
+  {name: t("name2") ,
+  description: t("description2") ,
+  location: t("location2"),
   picture: "lea.png"},
-  { name: "Romain",
-  description: " I asked Tom which I give food everyday when was his last shower ? I end even cutting his beard and my wife insisted him to stay for dinner. Was very thoughtful and simple moment ",
-  location: "New York - United States",
+  { name: t("name3"),
+  description: t("description3") ,
+  location: t("location3"),
   picture: "romain.png"}]
   end
 end

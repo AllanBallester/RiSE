@@ -1,4 +1,35 @@
 en:
+  #Navbar
+  sign_out: "Sign out"
+
+  #Footer
+
+  footer: This website and all RiSE Social Entreprenership is made by People's time and kindness. Nothing else.
+
+
+  #HomeFeedbacks
+  name1: "Alexandre"
+  description1: As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Miguel and give it to him. He was actually super cool and greetful."
+  location1: "Lille - France"
+
+  name2: "Lea"
+  description2: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Pedro, contact him and give it hand by hand.Now everyday"
+  location2: "Ho Chi minh-Vietnam"
+
+
+  name3: "Romain"
+  description3: " I asked Tom which I give food everyday when was his last shower ? I end even cutting his beard and my wife insisted him to stay for dinner. Was very thoughtful and simple moment "
+  location3: "New York - United States"
+
+
+  #HomePage
+
   title: "Homelesses Giving and Sharing Platform - Rise"
   baseline: "Give food, goods, skills or hospitality to people in need"
-  name: "Alexandre"
+
+  #Where
+  find: "Find"
+  second-line: "RiSE is 100% collaborative."
+  update: "Update Homeless position"
+  add-riser: "Add new Homeless" #AddnewHomeless
+  feedback: "How was your Riser's experience ?"

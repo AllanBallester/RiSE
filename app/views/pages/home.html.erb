@@ -17,14 +17,14 @@
     <p class="big p"> <%= t("baseline") %> </p>
    <form class="form-inline" action="/homelesses" method="get" id="ButtonGeoloc">
   <div class="form-group">
-    <input type="text" class="form-control location" name="location" id="homeless_location" placeholder="Where?">
-    <button class = "btn btn-yours" type="submit"> Find </button>
+    <input type="text" class="form-control location" name="location" id="homeless_location" placeholder= "Where?">
+    <button class = "btn btn-yours" type="submit"> <%= t("Find") %> </button>
   </div>
   </div>
 </form>
   </div>
 
-  <h5 class="bit-space"> RiSE is 100% collaborative.   </h5>
+  <h5 class="bit-space"> <%= t("second-line")%> </h5>
 
   <div class= "row">
 <div class="col-xs-12 col-sm-6 col-md-6 text-center width-large">
@@ -35,14 +35,14 @@
 
  <div class="col-xs-12 col-sm-6 col-md-6 text-center width-large">
   <div class= "banner-little" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%) , url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1503689864/Homeless01_rjiwso.jpg');">
-<%= link_to "Add new Homeless", new_homeless_path, class: "btn btn-card " %>
+<%= link_to t("add-riser"), new_homeless_path, class: "btn btn-card " %>
   </div>
  </div>
  </div>
 
 
 <div class="container" id="home-giders">
-  <h5 class= "text-center text-space"> How was your Riser's experience ? </h5>
+  <h5 class= "text-center text-space"> <%= t("feedback")%> </h5>
   <div class="row">
     <% @feedbacks.each do |gider| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
