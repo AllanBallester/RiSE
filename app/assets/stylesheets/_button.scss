@@ -96,13 +96,40 @@
 }
 
 .btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-   left: 50%;
-   top: 50%;
+  top: 45%;
+  left: 47%;
+  text-decoration: none ;
+  background-color: #14C667;
+  color: white;
+  border-radius : 4px;
+  font-weight: bold;
+  padding : 6.5px 18px;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+
+.btn-card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  text-decoration: none ;
+  background-color: #14C667;
+  color: white;
+  border-radius : 4px;
+  font-weight: bold;
+  padding : 6.5px 18px;
+  text-align: center;
+  transition: all ease 0.3s;
 }
 
 .width-large {
-  padding-left: 0px;
-  padding-right: 0px;
-
+  padding-left: 10px;
+  padding-right: 10px;
 }
