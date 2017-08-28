@@ -63,9 +63,11 @@ color: black;
  }
 
 .banner-little {
-  height: 40vh;
-  text-align: center;
+  height: 30vh;
   align-items: center;
-  display: flex;
-
+  display: block;
+  position: relative;
+  width: 100%;
 }
+
+
