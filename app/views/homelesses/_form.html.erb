@@ -18,30 +18,30 @@
   </div> -->
 
   <div class="sign-in-text form-group row"> <i class="fa fa-map-marker" aria-hidden="true"></i>
-  <label for="location">Location*</label>
+  <%= t.label :location %>
   <div class="col-10">
   <%= t.input :location, label: false, :size => 50, input_html:{class: "location form-control"}%>
   </div>
   </div>
 
   <div class="sign-in-text form-group row"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
-    <label for="phone">Phone</label>
+    <%= t.label :phone %>
     <div class="col-10">
   <%= t.input :phone, label: false, placeholder: "+() 5455664455 ", input_html:{class: "form-control"}%>
   </div>
   </div>
 
   <div class="sign-in-text form-group row"> <i class="fa fa-facebook-official blue-button" aria-hidden="true"></i>
-  <label for="fb_account">Facebook account</label>
+    <%= t.label :fb_account %>
     <div class="col-10">
-  <%= t.input :fb_account, label: false, placeholder: "If not, leave it blank", input_html:{class: "form-control"}%>
+  <%= t.input :fb_account, label: false, placeholder: "#{t('blank')}", input_html:{class: "form-control"}%>
   </div>
   </div>
 
   <div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
-    <label for="fb_account">Story</label>
+    <%= t.label :story %>
     <div class="col-10">
-  <%= t.input :story, label: false,  placeholder: "Optional", input_html:{class: "form-control"} %>
+  <%= t.input :story, label: false,  placeholder: "#{t('optional')}", input_html:{class: "form-control"} %>
   </div>
   </div>
 

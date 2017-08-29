@@ -76,7 +76,7 @@ gem 'postmark-rails'
 gem 'forest_liana'
 gem 'sidekiq'
 gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
-
+gem 'devise-i18n'
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"

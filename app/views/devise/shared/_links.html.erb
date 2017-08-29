@@ -13,11 +13,11 @@
 </div>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-  <span class="sign-in-text-account"> Do not have an account yet ?  <span> <%= link_to " Sign up", new_registration_path(resource_name) %><br />
+  <span class="sign-in-text-account"> <%= t("not-account") %>  <span> <%= link_to t("sign-up"), new_registration_path(resource_name) %><br />
 <% end -%>
 
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
-  <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+  <%= link_to t("not-rec"), new_confirmation_path(resource_name) %><br />
 <% end -%>
 
 <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>

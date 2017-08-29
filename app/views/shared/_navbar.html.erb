@@ -7,8 +7,8 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-<%= link_to "Our story", pages_our_story_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Join us", pages_join_us_path , class: "navbar-wagon-item navbar-wagon-link" %>
+<%= link_to t("our-story"), pages_our_story_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("contribute"), pages_join_us_path , class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% if riser_signed_in? %>
 
@@ -51,5 +51,19 @@
       </ul>
     </div>
   </div>
+
+
+  <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+    <li>
+      <%= link_to request.query_parameters.merge(locale: nil) do %>
+        <%= image_tag("favicon.png") %>
+      <% end %>
+    </li>
+    <li><%= link_to "fr", request.query_parameters.merge(locale: :fr) %></li>
+    <li><%= link_to "es", request.query_parameters.merge(locale: :es) %></li>
+  </ul>
+
 </div>
+
+
 

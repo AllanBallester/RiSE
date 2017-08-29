@@ -106,7 +106,7 @@ class HomelessesController < ApplicationController
   end
 
   def retrieve
-    @homeless = Homeless.where("name = ? AND last_name = ? ", params[:name], params[:last_name]).first
+    @homeless = Homeless.where("lower(name) = ? AND lower(last_name) = ? ", params[:name].downcase, params[:last_name].downcase).first
     respond_to do |format|
       format.js
     end

@@ -1,4 +1,4 @@
-<h5 class="sign-in-title">Forgot your password?</h5>
+<h5 class="sign-in-title"> <%= t("forgot") %></h5>
 
 <div class="container">
   <div class="row">
@@ -11,7 +11,7 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "Send me reset password instructions", class:"btn-yours btn-login" %>
+        <%= f.button :submit, t("send-pass"), class:"btn-yours btn-login" %>
       </div>
       <% end %>
 

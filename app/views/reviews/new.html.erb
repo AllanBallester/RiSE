@@ -1,18 +1,18 @@
 <% content_for :title, "Review #{@homeless.name} #{@homeless.last_name}" %>
 
 
-<h5 class="sign-in-title">Give your review !!!</h5>
+<h5 class="sign-in-title"> <%= t("give-review") %></h5>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4">
     <div class="sign-in-text">
       <%= simple_form_for [@homeless, @review] do |t| %>
-        <%= t.input :content %>
-        <%= t.input :picture, label: 'Add/Upload a Review picture' %>
+        <%= t.input :content, label: "#{t('content')}" %>
+        <%= t.input :picture, label: "#{t('add-upload')}" %>
         <%= t.input :picture_cache, as: :hidden %>
 
-        <%= t.submit "Create the Review", class: "btn-yours btn-login" %>
+        <%= t.submit "#{t('create-review')}", class: "btn-yours btn-login" %>
       <% end %>
       </div>
     </div>

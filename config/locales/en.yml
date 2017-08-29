@@ -1,13 +1,46 @@
 en:
-  #Navbar
+
+#Navbar
+  our-story: "Our story"
+  contribute: "Contribute"
   sign_out: "Sign out"
 
-  #Footer
 
-  footer: This website and all RiSE Social Entreprenership is made by People's time and kindness. Nothing else.
+#Footer
+  footer: "This website and all RiSE Social Entrepreneurship is made by People's time and kindness. Nothing else."
+
+#Ourstory
+  read-born: "Read about where we were born."
+  button-read: "Read article"
+  read-guts: "What's is in our head and guts ?"
+  button-manifesto: "Read RiSE Manifesto"
+
+#JoinUs
+  photo-line: "You want to shorten Human bareers with your camera."
+  photo-button: "RiSE Photo Exhibitions"
+  code-line: "You know Rails and want to code against poverty."
+  code-button: "Join one Coding Sprint"
+  city-line: "You want to accelerate the growth of RiSE in your city."
+  city-button: "Become a City Growth"
 
 
-  #HomeFeedbacks
+
+#HomePage
+  title: "Homelesses Giving and Sharing Platform - Rise"
+  baseline: "Give food, goods, skills or hospitality to people in need"
+  where: "Where?"
+  find: "Find"
+  second-line: "RiSE is 100% collaborative."
+  update: "Update Homeless position"
+    #Update Form
+
+
+  add-homeless: "Add new Homeless"
+  #AddnewHomeless Form
+  feedback: "How was your Riser's experience ?"
+    #Add Form
+
+#HomeFeedbacks
   name1: "Alexandre"
   description1: As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Miguel and give it to him. He was actually super cool and greetful."
   location1: "Lille - France"
@@ -22,14 +55,94 @@ en:
   location3: "New York - United States"
 
 
-  #HomePage
 
-  title: "Homelesses Giving and Sharing Platform - Rise"
-  baseline: "Give food, goods, skills or hospitality to people in need"
-
-  #Where
+#Index
+  where: "Where?"
   find: "Find"
-  second-line: "RiSE is 100% collaborative."
-  update: "Update Homeless position"
-  add-riser: "Add new Homeless" #AddnewHomeless
-  feedback: "How was your Riser's experience ?"
+  punchline: "No Homeless listed yet or missing ?"
+  add-homeless: "Add new Homeless"
+  view-button: "View"
+
+
+#Show
+  story: "Story"
+  create-story: "Create Story"
+  add-picture: "Add/Upload a Profile picture"
+  update-picture: "Update Profile Picture"
+  edit-name: "Edit"
+    #Edit Form
+
+
+  contact-pos: "Get Contact and Positions"
+  contact-pos2: "Get Contact and Positions"
+
+
+#Modal Intentions
+  choose-intention: "Choose your intention"
+  get-contact-button: "Get contact and positions"
+
+  #Intentions list intention.rb
+  food: "Food"
+  good: "Good"
+  skills: "Skills"
+  hospitality: "Hospitality"
+  others: "Others"
+
+  #Intentions Alerts : create_interests.js
+  select-intention: "What would you like to give ? !!"
+  choose: "Choose an intention at least dear !!"
+  #phone-reg:
+  #phone-nonreg:
+
+
+#Logs in
+  #Log in
+  login: "Log in to continue"
+  forgot-password: "Forgot your password?"
+  not-account: "Do not have an account yet ?"
+  sign-up: "Sign up"
+  not-rec: "Didn't receive confirmation instructions?"
+
+  #Forgot Password
+  forgot: "Forgot your password?"
+  send-pass: "Send me reset password instructions"
+
+  #Sign up
+  sign-up: "Sign up to continue"
+
+  #Confirm Email
+  confirm: "Resend confirmation instructions"
+  confirm-button: "Resend confirmation instructions"
+
+  #Update Homeless form
+  update-loc: "Update Homeless location"
+  last-name: "Last name"
+  name: "Name"
+  search-button: "Search"
+  new-loc: "New Location ?*"
+  update-loc: "Update location"
+
+  #Add New Homeless Form
+  kind-conta: "Kindness is contagious. Keep going."
+  #ActiveRecord
+  activerecord:
+    models:
+      homeless: "Homeless"
+    attributes:
+      homeless:
+        name: "Name"
+        story: "Story"
+        last_name: "Last name"
+        phone: "Phone"
+        location: "Location"
+        fb_account: "Facebook account"
+
+  #Edit Homeless
+  blank: "If not leave it blank"
+  optional: "Optional"
+
+  #PostReview
+  give-review: "Give your review !!!"
+  content: "Content"
+  add-upload: "Add/Upload a Review picture"
+  create-review: "Create Review"

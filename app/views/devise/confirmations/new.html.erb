@@ -1,4 +1,4 @@
-<h5 class="sign-in-title"> Resend confirmation instructions</h5>
+<h5 class="sign-in-title"> <%= t("confirm") %></h5>
 
 <div class="container">
   <div class="row">
@@ -12,7 +12,7 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Resend confirmation instructions", class:"btn-yours btn-signup" %>
+    <%= f.button :submit, t("confirm-button"), class:"btn-yours btn-signup" %>
   </div>
 <% end %>
 
