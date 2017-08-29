@@ -1,27 +1,17 @@
-<h5> Update one Rised's Location </h5>
-
 <div class = "container">
   <div class="row">
-<%= form_tag retrieve_homelesses_path, method: :get, remote: true, class:"sign-in-text col-md-4 col-md-offset-4" do %>
-<label for="name">Name</label>
-  <%= text_field_tag :name, params[:name], class: "form-control sign-in-text form-group row"%>
-  <label for="last_name">Last Name</label>
-  <%= text_field_tag :last_name, params[:last_name],class: "form-control sign-in-text form-group row" %>
-  <div class="text-center">
-  <%= submit_tag "Search", name: nil, class: "btn btn-yours" %>
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4" style="width: 40rem;">
+      <div class="form-update-position">
+        <form class="center sign-in-text form-group " action="/homelesses/retrieve" accept-charset="UTF-8" data-remote="true" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+          <div class="form-group">
+            <h5> Update one Homeless' Location </h5>
+            <label for="name">Name</label>
+            <input id="name" name="homeless[name]" type="text" class="form-control" />
+            <label for="last_name">Last Name</label>
+            <input id="last_name" name="homeless[last_name]" type="text" class="form-control" />
+          </div>
+          <button type="submit" class="btn btn-block btn-yours">Search</button>
+        </form>
+    </div>
   </div>
-<% end %>
-
 </div>
-</div>
-
-<div class= "row give-me-space">
-<div class= "col-md-4 col-md-offset-4">
-<div id="location-result"> </div>
-
-<div id="error-message"> </div>
-
-</div>
-</div>
-
-
