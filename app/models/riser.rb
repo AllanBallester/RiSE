@@ -11,7 +11,8 @@ class Riser < ApplicationRecord
 
    def self.find_for_facebook_oauth(auth)
     riser_params = auth.slice(:provider, :uid)
-    riser_params.merge! auth.info.slice(:email, :first_name, :last_name)
+    riser_params.merge! auth.info.slice(:email, :last_name)
+    riser_params[:name] = auth.info.first_name
     riser_params[:facebook_picture_url] = auth.info.image
     riser_params[:token] = auth.credentials.token
     riser_params[:token_expiry] = Time.at(auth.credentials.expires_at)
