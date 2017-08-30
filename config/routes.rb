@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   devise_for :risers,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
-  scope '(:locale)', locale: /fr|es/ do
+  scope '(:locale)', locale: /fr|es|en/ do
     get '/pages/our_story'
     get '/pages/join_us'
     get 'reviews/new'
