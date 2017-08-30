@@ -121,9 +121,9 @@
 <% end %>
 
 
- <div class= "text-center">
+ <!-- <div class= "text-center">
 <p> <%= link_to "Create a review", new_homeless_review_path(@homeless), class: "btn btn-yours btn-show " %> </p>
-<div>
+<div> -->
 
   <div class="container">
     <div class="row">
@@ -133,7 +133,7 @@
           <div class="pic">
             <%= image_tag review.riser.picture %>
           </div>
-          <h3 class="testimonial-title"><%= review.riser.name %></h3>
+          <h3 class="testimonial-title"><%= "#{review.riser.name} #{review.riser.last_name}" %></h3>
           <!-- <small class="post"></small> -->
           <p class="description">
             <%= review.content.truncate(100) %>...
