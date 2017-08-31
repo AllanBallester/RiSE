@@ -79,19 +79,21 @@ color: black;
 }
 
 .text-donation {
-  margin-top : 30px;
-  font-family: 'Lobster', cursive;
-  color: #FF847C;
-  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  text-align: center;
 }
 
 .donation {
   width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
 .inline-buttons {
+  display: inline-block;
   text-align: center;
+  margin-top: 30px;
 }
 
 .photo-modal {
@@ -115,4 +117,16 @@ color: black;
 
 .middle-pic {
 background-position: center;
+}
+
+.donation2 {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.donation3 {
+  margin-top: 60px;
 }

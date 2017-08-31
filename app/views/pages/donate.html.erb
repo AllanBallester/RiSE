@@ -1,18 +1,16 @@
+<div class= "banner cover" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1504209690/920x920_dp5rzu.jpg');">
 
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-4">
-<%= image_tag "http://res.cloudinary.com/dk9kkvy1o/image/upload/c_scale,w_618/v1504185174/34468424_FT_n4ymdj.png", class: "donation" %>
-</div>
 
-<div class="col-xs-12 col-sm-8 col-md-8">
-<p class= "text-donation"> Each 10 $ allow donate allow to give a phone to one Homeless in the world. </p>
-</div>
 
-<div class="inline-buttons">
+<div class="col-xs-12 col-sm-8 col-md-8 offset-4">
+<p class= "text-donation"> Each 10 $ donation allows us to give a phone to one Homeless in the world. </p>
+
+
+<div class = "text-center">
 
 <% [5, 10, 25, 50].each do |amount| %>
 
-  <%= form_tag donations_path(amount: amount) do %>
+  <%= form_tag donations_path(amount: amount), class: "inline-buttons donation3" do %>
 
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
       data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -27,6 +25,11 @@
   <% end %>
 
 <% end %>
+
+</div>
+
+<%= image_tag "http://res.cloudinary.com/dk9kkvy1o/image/upload/v1504210988/hostiso-stripe_al5phm.png", class: "donation2" %>
+</div>
 
 </div>
 

@@ -19,7 +19,7 @@ $(document).ready(function() {
 var handler = Gmaps.build('Google',
 {markers:
   {clusterer: {
-  gridSize: 200,
+  gridSize: 100,
   maxZoom: 10}}});
   handler.buildMap({internal: { id: 'map' } }, function() {
   markers = handler.addMarkers(<%= raw @hash.to_json %>);
