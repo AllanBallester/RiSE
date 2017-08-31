@@ -289,3 +289,17 @@ h6 {
 .give-me-space {
   margin: 30px;
 }
+
+.infowindow {
+  display: flex;
+  align-items: center;
+
+  div {
+    padding: 5px 0 5px 15px;
+  }
+
+  p {
+    color: black;
+    font-weight: bold;
+  }
+}

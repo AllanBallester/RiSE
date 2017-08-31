@@ -1,9 +1,12 @@
-<% if homeless.photos.present? %>
-<%= image_tag homeless.photos.last.picture %>
-<%else %>
-<%= image_tag "https://i.stack.imgur.com/HQwHI.jpg" %>
-<%end %>
+<div class="infowindow">
+  <% if homeless.photos.present? %>
+  <%= image_tag homeless.photos.last.picture, class: "avatar" %>
+  <%else %>
+  <%= image_tag "https://i.stack.imgur.com/HQwHI.jpg", class: "avatar" %>
+  <%end %>
 
-<%= homeless.name %>
-
-<%= link_to "View", homeless_path(homeless), class: "btn btn-yours" %>
+  <div>
+    <p><%= homeless.name %></p>
+    <%= link_to "View", homeless_path(homeless), class: "btn btn-yours" %>
+  </div>
+</div>
