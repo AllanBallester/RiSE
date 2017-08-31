@@ -5,11 +5,13 @@
   <% end %>
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class="navbar-wagon-right">
 
-<%= link_to t("our-story"), pages_our_story_path, class: "navbar-wagon-item navbar-wagon-link" %>
-<%= link_to t("contribute"), pages_join_us_path , class: "navbar-wagon-item navbar-wagon-link" %>
-<%= link_to t("Donate"), pages_donate_path , class: "navbar-wagon-item navbar-wagon-link" %>
+    <div class="navbar-wagon-right hidden-xs ">
+      <%= link_to t("our-story"), pages_our_story_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("contribute"), pages_join_us_path , class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("Donate"), pages_donate_path , class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
 
 
     <% if riser_signed_in? %>
@@ -47,7 +49,7 @@
   </div>
 
       <!-- Avatar with dropdown menu -->
-      <div class="navbar-wagon-item">
+      <div class="navbar-wagon-item navbar-wagon-right">
         <div class="dropdown">
           <% avatar_url = current_riser.facebook_picture_url || "https://i.stack.imgur.com/HQwHI.jpg" %>
           <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
@@ -69,18 +71,6 @@
       <!-- Login link (when logged out) -->
       <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
-  </div>
-
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
-    </div>
   </div>
 
 
