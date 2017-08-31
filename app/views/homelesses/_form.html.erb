@@ -1,12 +1,12 @@
 <%= simple_form_for(@homeless) do |t| %>
 
-  <div class = "sign-in-text form-group row">
+  <div class = "sign-in-text  form-group">
   <div class="col-10">
   <%= t.input :name , placeholder: "Peter", input_html:{class: "form-control"}%>
   </div>
   </div>
 
-  <div class="sign-in-text form-group row">
+  <div class="sign-in-text form-group ">
     <div class="col-10">
   <%= t.input :last_name, placeholder: "Parker", input_html:{class: "form-control"}%>
   </div>
@@ -17,33 +17,33 @@
   <%= t.text_area :story, rows: 10, cols: 25 %>
   </div> -->
 
-  <div class="sign-in-text form-group row"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+  <div class="sign-in-text form-group "> <i class="fa fa-map-marker" aria-hidden="true"></i>
   <label for="location">Location*</label>
   <div class="col-10">
   <%= t.input :location, label: false, :size => 50, input_html:{class: "location form-control"}%>
   </div>
   </div>
 
-  <div class="sign-in-text form-group row"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  <div class="sign-in-text form-group "> <i class="fa fa-whatsapp" aria-hidden="true"></i>
     <label for="phone">Phone</label>
     <div class="col-10">
   <%= t.input :phone, label: false, placeholder: "+() 5455664455 ", input_html:{class: "form-control"}%>
   </div>
   </div>
 
-  <div class="sign-in-text form-group row"> <i class="fa fa-facebook-official blue-button" aria-hidden="true"></i>
+  <div class="sign-in-text form-group "> <i class="fa fa-facebook-official blue-button" aria-hidden="true"></i>
   <label for="fb_account">Facebook account</label>
     <div class="col-10">
   <%= t.input :fb_account, label: false, placeholder: "If not, leave it blank", input_html:{class: "form-control"}%>
   </div>
   </div>
 
-  <div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
+  <div class="sign-in-text form-group "> <i class="fa fa-file-text-o" aria-hidden="true"></i>
     <label for="fb_account">Story</label>
     <div class="col-10">
   <%= t.input :story, label: false,  placeholder: "Optional", input_html:{class: "form-control"} %>
   </div>
   </div>
 
-  <%= t.submit "Add Rised", class: "btn-yours btn-login"%>
+  <%= t.submit "Add Rised", class: "btn btn-block btn-yours"%>
 <% end %>
