@@ -77,6 +77,10 @@ gem 'forest_liana'
 gem 'sidekiq'
 gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
 gem 'devise-i18n'
+gem 'money-rails'
+gem 'stripe'
+gem 'coffee-script'
+
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"

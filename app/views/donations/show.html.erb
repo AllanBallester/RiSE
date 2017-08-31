@@ -1,0 +1,5 @@
+<h1>Donation summary</h1>
+<ul>
+  <li>Status: <%= @donation.state %></li>
+  <li>Amount: <%= humanized_money_with_symbol(@donation.amount) %></li>
+<ul>

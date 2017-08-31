@@ -7,7 +7,7 @@ class HomelessesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@homelesses) do |homeless, marker|
       marker.lat homeless.latitude
       marker.lng homeless.longitude
-      # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+      marker.infowindow render_to_string(partial: "/homelesses/infowindow", locals: { homeless: homeless })
     end
   end
 

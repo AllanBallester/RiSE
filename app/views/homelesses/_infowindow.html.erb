@@ -1,0 +1,9 @@
+<% if homeless.photos.present? %>
+<%= image_tag homeless.photos.last.picture %>
+<%else %>
+<%= image_tag "https://i.stack.imgur.com/HQwHI.jpg" %>
+<%end %>
+
+<%= homeless.name %>
+
+<%= link_to "View", homeless_path(homeless), class: "btn btn-yours" %>

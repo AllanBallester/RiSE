@@ -1,0 +1,35 @@
+
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-4">
+<%= image_tag "http://res.cloudinary.com/dk9kkvy1o/image/upload/c_scale,w_618/v1504185174/34468424_FT_n4ymdj.png", class: "donation" %>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-8">
+<p class= "text-donation"> Each 10 $ allow donate allow to give a phone to one Homeless in the world. </p>
+</div>
+
+<div class="inline-buttons">
+
+<% [5, 10, 25, 50].each do |amount| %>
+
+  <%= form_tag donations_path(amount: amount) do %>
+
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+      data-name="RiSE"
+      data-description=" RiSE 5€ Donation"
+      data-amount="<%= amount*100 %>"
+      data-label="Donate <%= amount %>€"
+      data-email="<%= current_riser&.email%>"
+      data-currency="<%= @donation.amount.currency %>">
+    </script>
+
+  <% end %>
+
+<% end %>
+
+</div>
+
+</div>
+
+

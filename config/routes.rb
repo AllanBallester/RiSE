@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+resources :donations, only: [:show, :new, :create]
+
   require "sidekiq/web"
   authenticate :riser, lambda { |u| u.admin } do
     mount Sidekiq::Web => '/sidekiq'
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /fr|es|en/ do
     get '/pages/our_story'
     get '/pages/join_us'
+    get '/pages/donate'
     get 'reviews/new'
 
     root to: "pages#home"

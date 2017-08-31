@@ -1,4 +1,4 @@
-class PhotosController < ApplicationController
+  class PhotosController < ApplicationController
 before_action :authenticate_riser!, only: [:new, :create, :update]
 
   def new

@@ -13,5 +13,10 @@ class PagesController < ApplicationController
   location: t("location3"),
   picture: "romain.png"}]
   end
+
+  def donate
+  @donation= Donation.new(amount: 5*100)
+  end
+
 end
 
