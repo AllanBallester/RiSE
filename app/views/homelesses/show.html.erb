@@ -42,13 +42,19 @@
   </div>
 
   <div class="col-sm-4 col-sm-offset-2">
+  <% if riser_signed_in? %>
     <div class= "sign-in-text">
       <%= simple_form_for [@homeless, @photo] do |f| %>
-      <%= f.input :picture, label: t("add-picture") %>
-      <%= f.input :picture_cache, as: :hidden %>
-      <%= f.submit t("update-picture") %>
+        <%= f.input :picture, label: t("add-picture") %>
+        <%= f.input :picture_cache, as: :hidden %>
+        <%= f.submit t("update-picture") %>
       <% end %>
     </div>
+  <% else %>
+    <div>
+    <%= link_to "Upload picture", sign_in_homeless_photos_path(@homeless), class: "btn btn-yours" %>
+    </div>
+  <% end %>
 <%= link_to "#{t('edit-name')} #{@homeless.name}", edit_homeless_path(@homeless), class: "btn btn-primary btn-edit" %>
 
   </div>

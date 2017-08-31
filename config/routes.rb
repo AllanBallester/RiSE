@@ -28,7 +28,11 @@ resources :donations, only: [:show, :new, :create]
         get "retrieve"
       end
       resources :reviews, only: [:new, :create, :index, :update]
-      resources :photos, only: [:new, :create, :update]
+      resources :photos, only: [:new, :create, :update] do
+        collection do
+          get :sign_in
+        end
+      end
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

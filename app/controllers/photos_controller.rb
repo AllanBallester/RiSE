@@ -1,9 +1,14 @@
-  class PhotosController < ApplicationController
-before_action :authenticate_riser!, only: [:new, :create, :update]
+class PhotosController < ApplicationController
+  before_action :authenticate_riser!, only: [:new, :create, :update, :sign_in]
 
   def new
     @photo = Photo.new
     @homeless = Homeless.find(params[:homeless_id])
+  end
+
+  def sign_in
+    @homeless = Homeless.find(params[:homeless_id])
+    redirect_to homeless_path(@homeless)
   end
 
   def create
@@ -28,5 +33,5 @@ before_action :authenticate_riser!, only: [:new, :create, :update]
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
     params.require(:photo).permit(:picture, :picture_cache)
-end
+  end
 end
