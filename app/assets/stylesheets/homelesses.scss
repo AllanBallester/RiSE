@@ -46,6 +46,7 @@ color: black;
 
 .homeless_phone {
   color : black;
+  font-weight: bold;
 }
 
 .text-space {
@@ -91,4 +92,19 @@ color: black;
 
 .inline-buttons {
   text-align: center;
+}
+
+.photo-modal {
+  height: 10vh;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.close {
+  color: #FF847C;
+}
+
+.type-rise {
+  color: #FF847C;
 }

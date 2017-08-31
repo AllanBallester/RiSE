@@ -2,9 +2,10 @@
   $("#error-message").html(" <p class= sign-in-text> <%= t("choose") %> </p>")
 <% else %>
   <% if @homeless.phone.present? %>
-    $("#homeless_modal").html(" <p class='homeless_phone'> Phone registered !!! Contact <%= @homeless.name %> at <%= j @homeless.phone %> and define When and What to give. </p> <p> <%= j @homeless.fb_account %> </p> <span class='close'>Close</span>")
+  var stu = "<%= j render "modalwithphone" %>"
+    $("#homeless_modal").html(stu);
   <% else %>
-    var str = "<p class='homeless_phone' > No one Phone registered yet. Therefore find <%= @homeless.name %> with the last 5 markers position revealed on the map. The blue markers with the letter A shows the most recent one.  </p> <span class='close'>Close</span>";
+    var str = "<%= j render "modalphone" %>";
     $("#homeless_modal").html(str);
   <% end %>
 
@@ -33,4 +34,4 @@
     });
 <% end %>
 
-// <img src='<%=image_path('geolocation.png') %>' class=''>
+//
