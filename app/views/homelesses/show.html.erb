@@ -47,7 +47,7 @@
       <%= simple_form_for [@homeless, @photo] do |f| %>
         <%= f.input :picture, label: t("add-picture") %>
         <%= f.input :picture_cache, as: :hidden %>
-        <%= f.submit t("update-picture") %>
+        <%= f.submit t("update-picture"), class: "btn btn-yours2" %>
       <% end %>
     </div>
   <% else %>
@@ -126,16 +126,15 @@
   <% end %>
 <% end %>
 
-
- <!-- <div class= "text-center">
+<div class= "text-center">
 <p> <%= link_to "Create a review", new_homeless_review_path(@homeless), class: "btn btn-yours btn-show " %> </p>
-<div> -->
+<div>
 
   <div class="container">
     <div class="row">
       <% @homeless.reviews.last(3).each do |review| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="testimonial">
+        <div class="testimonial give-me-space">
           <div class="pic">
             <%= image_tag review.riser.picture %>
           </div>

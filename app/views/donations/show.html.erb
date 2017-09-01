@@ -1,5 +1,10 @@
-<h1>Donation summary</h1>
-<ul>
-  <li>Status: <%= @donation.state %></li>
-  <li>Amount: <%= humanized_money_with_symbol(@donation.amount) %></li>
-<ul>
+<div class='row'>
+  <div class="col-xs-12 col-sm-6 col-md-6 offset-md-3 ">
+
+  <h1 class= "">Donation summary</h1>
+  <ul>
+    <li>Status: <%= @donation.state %></li>
+    <li>Amount: <%= humanized_money_with_symbol(@donation.amount) %></li>
+
+  </div>
+</div>

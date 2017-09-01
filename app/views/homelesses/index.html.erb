@@ -35,6 +35,7 @@ handler.getMap().setZoom(14);
 <% end %>
 <% end %>
 
+
 <div class= "text-center">
   <h5 class= "map-text "> <%= t("punchline") %> </h5>
   <%= link_to t("add-homeless"), new_homeless_path, class: "btn btn-yours btn-find " %>
@@ -45,7 +46,7 @@ handler.getMap().setZoom(14);
     <% @homelesses.each do |homeless| %>
       <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="rised">
-          <div class="pic">
+          <div class="pic2">
             <% if homeless.photos.any? %>
               <%= cl_image_tag homeless.photos.last.picture %>
             <% end %>
