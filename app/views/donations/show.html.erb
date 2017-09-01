@@ -1,10 +1,12 @@
 <div class='row'>
-  <div class="col-xs-12 col-sm-6 col-md-6 offset-md-3 ">
+  <div class="text-center ">
 
-  <h1 class= "">Donation summary</h1>
+  <%=image_tag ("http://res.cloudinary.com/dk9kkvy1o/image/upload/c_scale,w_433/v1504287697/LogoPink_mxp8ls.png") %>
+  <h1 class= "sign-in-text">Donation summary</h1>
   <ul>
-    <li>Status: <%= @donation.state %></li>
-    <li>Amount: <%= humanized_money_with_symbol(@donation.amount) %></li>
+    <p class= "sign-in-text give-me-space">Status: <%= @donation.state %></p>
+    <p class="sign-in-text">Amount: <%= humanized_money_with_symbol(@donation.amount) %></li>
 
+    <p class= "sign-in-text give-me-space"> <strong> You will received soon an email to know who  you helped around the world. </strong> </p>
   </div>
 </div>
