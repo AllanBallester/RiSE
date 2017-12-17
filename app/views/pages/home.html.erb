@@ -9,7 +9,7 @@
    <form class="form-inline" action="<%= homelesses_path %>" method="get" id="ButtonGeoloc">
   <div class="form-group">
     <input type="text" class="form-control location" name="location" id="homeless_location" placeholder= "<%= t('where') %>">
-    <button class = "btn btn-yours" type="submit"> <%= t("Find") %> </button>
+    <button class = "btn btn-yours" type="submit"> <%= t("find") %> </button>
   </div>
   </div>
 </form>
@@ -43,7 +43,7 @@
                         <h3 class="testimonial-title"><%= gider[:name] %></h3>
                         <small class="post"><%= gider[:location] %></small>
                         <p class="description">
-                            <%= gider[:description][0..170] %>...
+                            <%= gider[:description][0..190] %>...
                         </p>
                     </div>
       </div>
