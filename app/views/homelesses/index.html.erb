@@ -52,8 +52,13 @@ handler.getMap().setZoom(14);
             <% end %>
           </div>
           <h3 class="rised-title"><%= homeless.name %></h3>
+            <% if homeless.position_histories.any? %>
+              <p> Location updated <%= time_ago_in_words homeless.position_histories.last&.created_at %> ago. </p>
+            <% else %>
+              <p> Location updated <%= time_ago_in_words homeless.updated_at %> ago. </p>
+            <% end %>
           <p class="description">
-            <%= truncate(homeless.story, length: 100) %>...
+          <%= truncate(homeless.story, length: 100) %>...
           </p>
           <%= link_to t("view-button"), homeless_path(homeless), class:"btn btn-yours" %> </button>
         </div>
