@@ -62,7 +62,7 @@ en:
   add-homeless: "Add new Homeless"
   view-button: "View"
 
-  view-modal: "Voir"
+  view-modal: "View"
 
 
 #Show - - - - - - - - -  - - - - - - - -
@@ -104,7 +104,7 @@ en:
   #modalwithpone
   phone-reg: "Phone registered."
   contact: "Contact"
-  at: "au"
+  at: "at"
   define: "and define When and What to give."
   addition: "In addition you can find now the last 5"
   position-map: "'s position in the profile map. Blue Pin show the most recent."
