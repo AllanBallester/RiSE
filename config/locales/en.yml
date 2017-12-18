@@ -24,7 +24,6 @@ en:
   city-button: "Become a City Growth"
 
 
-
 #HomePage
   title: "Homelesses Giving and Sharing Platform - Rise"
   baseline: "Give food, goods, skills or hospitality to people in need"
@@ -42,29 +41,31 @@ en:
 
 #HomeFeedbacks
   name1: "Alexandre"
-  description1: As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Miguel and give it to him. He was actually super cool . We "
+  description1: As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Roland and give it to him. He was actually super cool .
   location1: "Lille - France"
 
   name2: "Lea"
-  description2: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Pedro, contact him and give it hand by hand.Now everyday"
+  description2: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Diane, contact him and give it hand by hand.Now everyday"
   location2: "Ho Chi minh-Vietnam"
 
 
   name3: "Romain"
-  description3: " I asked Tom which I give food everyday when was his last shower ? I end even cutting his beard and my wife insisted him to stay for dinner. Was very thoughtful and simple moment "
+  description3: " I asked Tom which I give food everyday when was his last shower ? I end even cutting his beard and my wife insisted him to stay for dinner. Was very thoughtful and simple moment"
   location3: "New York - United States"
 
 
 
-#Index
+#Index - - - - - - - -  - - - - - - - - -
   where: "Where?"
   find: "Find"
   punchline: "No Homeless listed yet or missing ?"
   add-homeless: "Add new Homeless"
   view-button: "View"
 
+  view-modal: "View"
 
-#Show
+
+#Show - - - - - - - - -  - - - - - - - -
   story: "Story"
   create-story: "Create Story"
   add-picture: "Add/Upload a Profile picture"
@@ -73,13 +74,13 @@ en:
     #Edit Form
 
 
-  contact-pos: "Find and contact"
-  contact-pos2: "Find and contact"
+  contact-pos: "Show contact and position"
+  contact-pos2: "Show contact and position"
 
 
 #Modal Intentions
   choose-intention: "Choose your intention"
-  get-contact-button: "Get contact and positions"
+  get-contact-button: "Show contact and position"
 
   #Intentions list intention.rb
   food: "Food"
@@ -94,25 +95,31 @@ en:
   #phone-reg:
   #phone-nonreg:
 
+  #modal-phone
+  no-phone: "No one Phone registered yet. However the profile's map is now revealed."
+  last-position: "You can find now the last 5"
+  blue-pin: "'s position. Blue Pin show the most recent one."
+  close: "Close"
 
-#Logs in
-  #Log in
-  login: "Log in to continue"
-  forgot-password: "Forgot your password?"
-  not-account: "Do not have an account yet ?"
-  sign-up: "Sign up"
-  not-rec: "Didn't receive confirmation instructions?"
+  #modalwithpone
+  phone-reg: "Phone registered."
+  contact: "Contact"
+  at: "at"
+  define: "and define When and What to give."
+  addition: "In addition you can find now the last 5"
+  position-map: "'s position in the profile map. Blue Pin show the most recent."
 
-  #Forgot Password
-  forgot: "Forgot your password?"
-  send-pass: "Send me reset password instructions"
+#Edit Homeless
+  info-update: "Any informations to update ?"
+  blank: "If not leave it blank"
+  optional: "Optional"
 
-  #Sign up
-  sign-up: "Sign up to continue"
+  #PostReview
+  give-review: "Give your review !!!"
+  content: "Content"
+  add-upload: "Add/Upload a Review picture"
+  create-review: "Create Review"
 
-  #Confirm Email
-  confirm: "Resend confirmation instructions"
-  confirm-button: "Resend confirmation instructions"
 
   #Update Homeless form
   update-loc: "Update Homeless location"
@@ -120,7 +127,7 @@ en:
   name: "Name"
   search-button: "Search"
   new-loc: "New Location ?*"
-  update-loc: "Update location"
+  update-loc: "Update Homeless location"
 
   #Add New Homeless Form
   kind-conta: "Kindness is contagious. Keep going."
@@ -137,12 +144,23 @@ en:
         location: "Location"
         fb_account: "Facebook account"
 
-  #Edit Homeless
-  blank: "If not leave it blank"
-  optional: "Optional"
 
-  #PostReview
-  give-review: "Give your review !!!"
-  content: "Content"
-  add-upload: "Add/Upload a Review picture"
-  create-review: "Create Review"
+  #Logs in - - - - - - -  - - - - - - - - - - - -
+  #Log in
+  login: "Log in to continue"
+  forgot-password: "Forgot your password?"
+  not-account: "Do not have an account yet ?"
+  sign-up: "Sign up"
+  not-rec: "Didn't receive confirmation instructions?"
+
+  #Forgot Password
+  forgot: "Forgot your password?"
+  send-pass: "Send me reset password instructions"
+
+  #Sign up
+  sign-up: "Sign up to continue"
+  sign-up2: "Sign up"
+
+  #Confirm Email
+  confirm: "Resend confirmation instructions"
+  confirm-button: "Resend confirmation instructions"

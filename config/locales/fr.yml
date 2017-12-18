@@ -1,11 +1,142 @@
 fr:
 
+#Navbar
+  our-story: "Our story"
+  contribute: "Contribute"
+  sign_out: "Log out"
+
+
+#Footer
+  footer: "Ce site ainsi que l'ensemble de RiSE est fait de temps et de la bonté des personnes qui y contribuent. Et rien de plus."
+
 #HomePage
-  title: "Plateforme de partages de biens - Rise"
+  title: "Plateforme de dons de biens - Rise"
   baseline: "Offrez nourriture, biens, compétences ou hospitalité aux personnes dans le besoin"
   where: "Ou?"
-  find: "Recherche"
+  find: "Rechercher"
   second-line: "RiSE est 100% collaboratif."
   update: "Actualiser la position d'un sans-abris"
     #Update Form
+  add-homeless: "Ajouter un sans-abris"
+  feedback: "Comment était votre expérience en tant que Risers?"
 
+#HomeFeedbacks
+  name1: "Alexandre"
+  description1: "Comme ça se passe souvent nous avions trop commandé . Au lieu de gaspiller on a demandé de nous le mettre à emporter, on s'est branché sur Rise, trouvé Roland et on lui a donné. Il a été super cool avec nous. Nous "
+  location1: "Lille - France"
+
+  name2: "Lea"
+  description2: " Rise, c'était très simple pour moi. J'avais 3 hauts à jeter. J'avais pour habitude de les benner directement. Au lieu de celà j'ai simplement trouvé Diane, je l'ai contacté et lui ai remis main à main. Maintenant, tous les jours"
+  location2: "Ho Chi minh-Vietnam"
+
+
+  name3: "Romain"
+  description3: " J'ai demandé à Tom a qui j'ai l'habitude d'apporter à manger tous les jours quand était sa dernière douche ? Ca a même fini par moi lui rasant la barbe et ma femme insistant pour qu'il reste à dinner. C'était un moment profond et à la fois très simple."
+  location3: "New York - United States"
+
+
+#Index - - - - - - - - - - - - - - - - - - - - - -
+  where: "Ou?"
+  find: "Rechercher"
+  punchline: "Pas encore de sans-abris listés ou manquants ?"
+  add-homeless: "Ajouter un sans-abris"
+  view-button: "Voir"
+
+  view-modal: "Voir"
+
+  #Show - - - - - - - - - - - - - - - - - - - -
+  story: "Histoire"
+  create-story: "Ajouter l'histoire"
+  add-picture: "Ajouter une photo de profil"
+  update-picture: "Confirmez photo"
+  edit-name: "Editer"
+
+  contact-pos: "Afficher contact et position"
+  contact-pos2: "Afficher contact et position"
+
+#Modal Intentions
+  choose-intention: "Choisissez votre intention"
+  get-contact-button: "Afficher contact et position"
+
+#Intentions list intention.rb
+  food: "Nourriture"
+  good: "Biens"
+  skills: "Compétences"
+  hospitality: "Hospitalité"
+  others: "Autres"
+
+  #Intentions Alerts : create_interests.js
+  select-intention: "Que souhaiteriez vous donner ? !!"
+  choose: "Choisissez au moins une intention !!"
+  #phone-reg:
+  #phone-nonreg:
+
+#modal-phone
+  no-phone: "Pas de téléphone encore enregistré. Cependant la map du profil est maintnant révélée."
+  last-position: "Vous pouvez maintenant trouver les 5 dernières positions de"
+  blue-pin: "La punaise bleu indique la plus récente d'entre elles."
+  close: "Fermer"
+
+  #modalwithpone
+  phone-reg: "Téléphone enregistré."
+  contact: "Contactez"
+  at: "au"
+  define: "et définissez Quand et Que donner."
+  addition: "En plus de celà vous pouvez maintenant trouver le 5 dernières positions de "
+  position-map: "dans la carte du profil. La punaise bleu indique la plus récente d'entre elles."
+
+#Edit Homeless
+  info-update: "Quelle information à mettre à jour?"
+  blank: "Si aucun, laissez le champ vide"
+  optional: "Optionnel"
+
+  #PostReview
+  give-review: "Donnez votre feedback !!!"
+  content: "Contenu"
+  add-upload: "Ajouter une photo"
+  create-review: "Créer Feedback"
+
+  #Update Homeless form
+  update-loc: "Mettre à jour la position d'un sans-abris"
+  last-name: "Nom"
+  name: "Prénom"
+  search-button: "Rechercher"
+  new-loc: "Nouvelle position ?*"
+  update-loc: "Mettre à jour la position d'un sans-abris"
+
+  #Add New Homeless Form
+  kind-conta: "La générosité est contagieuse. Ne lâche pas."
+  #ActiveRecord
+  activerecord:
+    models:
+      homeless: "Sans-abris"
+    attributes:
+      homeless:
+        name: "Prénom"
+        story: "Histoire"
+        last_name: "Nom de famille"
+        phone: "Contact"
+        location: "Position"
+        fb_account: "Compte Facebook"
+
+
+  #Logs in - - - - - - - - - -  - - - - -  - - - -
+  #Log in
+  login: "Connectes-toi pour continuer"
+  forgot-password: "Tu as oublié ton mot de passe?"
+  not-account: "Tu n'as pas encore de compte ?"
+  sign-up: "Créer son compte"
+  not-rec: "Tu n'as pas reçu d'email de confirmation?"
+
+#Forgot Password
+  forgot: "Mot de passe oublié?"
+  send-pass: "Réinitialiser mot de passe"
+
+  #Sign up
+  sign-up: "Créer son compte"
+  sign-up2: "Créer compte"
+
+
+  #Confirm Email
+  confirm: "Renvoyer l'email de confirmation"
+  confirm-button: "Renvoyer l'email de confirmation"
