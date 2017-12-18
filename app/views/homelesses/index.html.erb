@@ -53,9 +53,9 @@ handler.getMap().setZoom(14);
           </div>
           <h3 class="rised-title"><%= homeless.name %></h3>
             <% if homeless.position_histories.any? %>
-              <p> Location updated <%= time_ago_in_words homeless.position_histories.last&.created_at %> ago. </p>
+              <p class="type-rise2"> <%= t("loc-updated") %> <%= time_ago_in_words homeless.position_histories.last&.created_at %> <%= t("ago") %>. </p>
             <% else %>
-              <p> Location updated <%= time_ago_in_words homeless.updated_at %> ago. </p>
+              <p class="type-rise2"> <%= t("loc-updated") %> <%= time_ago_in_words homeless.updated_at %> <%= t("ago") %>. </p>
             <% end %>
           <p class="description">
           <%= truncate(homeless.story, length: 100) %>...

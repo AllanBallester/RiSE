@@ -61,7 +61,8 @@ en:
   punchline: "No Homeless listed yet or missing ?"
   add-homeless: "Add new Homeless"
   view-button: "View"
-
+  loc-updated: "Location updated"
+  ago: "ago"
   view-modal: "View"
 
 
