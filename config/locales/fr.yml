@@ -41,7 +41,8 @@ fr:
   punchline: "Pas encore de sans-abris listés ou manquants ?"
   add-homeless: "Ajouter un sans-abris"
   view-button: "Voir"
-
+  loc-updated: "Position actualisé il y a"
+  ago: ""
   view-modal: "Voir"
 
   #Show - - - - - - - - - - - - - - - - - - - -

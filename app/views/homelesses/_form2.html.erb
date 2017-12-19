@@ -24,7 +24,6 @@
   </div>
   </div>
 
-  <% if @homeless.intentions.where(riser: current_riser).present? %>
   <div class="sign-in-text form-group row"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
     <%= t.label :phone %>
     <div class="col-10">
@@ -38,7 +37,6 @@
   <%= t.input :fb_account, label: false, placeholder: "#{t('blank')}", input_html:{class: "form-control"}%>
   </div>
   </div>
-  <%end %>
 
   <div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
     <%= t.label :story %>
