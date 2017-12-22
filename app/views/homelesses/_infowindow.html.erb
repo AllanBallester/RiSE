@@ -7,6 +7,14 @@
 
   <div>
     <p><%= homeless.name %></p>
+    <% if homeless.position_histories.any? %>
+    <p class="modalito"> <i class="fa fa-refresh" aria-hidden="true"></i>
+ : <%= time_ago_in_words homeless.position_histories.last&.created_at %> <%= t("ago") %> </p>
+    <% else %>
+    <p class="modalito"> <i class="fa fa-refresh" aria-hidden="true"></i>
+ : <%= time_ago_in_words homeless.updated_at %> <%= t("ago") %> </p>
+    <% end %>
+
     <%= link_to t("view-modal"), homeless_path(homeless), class: "btn btn-yours" %>
   </div>
 </div>
