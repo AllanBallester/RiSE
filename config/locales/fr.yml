@@ -36,7 +36,7 @@ fr:
 
 
 #Index - - - - - - - - - - - - - - - - - - - - - -
-  where: "Ou?"
+  where: "Où?"
   find: "Rechercher"
   punchline: "Pas encore de sans-abris listés ou manquants ?"
   add-homeless: "Ajouter un sans-abris"
@@ -73,7 +73,7 @@ fr:
   #phone-nonreg:
 
 #modal-phone
-  no-phone: "Pas de téléphone encore enregistré. Cependant la map du profil est maintnant révélée."
+  no-phone: "Pas de téléphone encore enregistré. Cependant la map du profil est maintenant révélée."
   last-position: "Vous pouvez maintenant trouver les 5 dernières positions de"
   blue-pin: "La punaise bleu indique la plus récente d'entre elles."
   close: "Fermer"
@@ -106,7 +106,7 @@ fr:
   update-loc: "Mettre à jour la position d'un sans-abris"
 
   #Add New Homeless Form
-  kind-conta: "La générosité est contagieuse. Ne lâche pas."
+  kind-conta: "La générosité est contagieuse. Tu y est presque."
   #ActiveRecord
   activerecord:
     models:
