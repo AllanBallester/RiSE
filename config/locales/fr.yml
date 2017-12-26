@@ -106,7 +106,7 @@ fr:
   update-loc: "Mettre à jour la position d'un sans-abris"
 
   #Add New Homeless Form
-  kind-conta: "La générosité est contagieuse. Tu y est presque."
+  kind-conta: "La générosité est contagieuse. Tu y es presque."
   #ActiveRecord
   activerecord:
     models:
