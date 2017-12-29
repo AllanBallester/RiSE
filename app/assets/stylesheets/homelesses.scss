@@ -140,3 +140,10 @@ background-position: center;
   color: #FF847C;
   opacity: 0.4;
 }
+
+.up {
+  position:relative;
+    transition: .5s ease;
+    top: -5px;
+
+}
