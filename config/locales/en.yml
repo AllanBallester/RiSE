@@ -26,7 +26,7 @@ en:
 
 #HomePage
   title: "Rise - Homelesses Giving and Sharing Platform"
-  baseline: "Give food, goods, skills or hospitality to people in need"
+  baseline: "Give food, goods, jobs or hospitality to people in need"
   where: "Where?"
   find: "Find"
   second-line: "RiSE is 100% collaborative."
@@ -68,7 +68,9 @@ en:
 
 #Show - - - - - - - - -  - - - - - - - -
   story: "Story"
+  skills: "Skills"
   create-story: "Create Story"
+  create-skills: "Add skills"
   add-picture: "Add/Upload a Profile picture"
   update-picture: "Update Profile Picture"
   edit-name: "Edit"
@@ -86,7 +88,7 @@ en:
   #Intentions list intention.rb
   food: "Food"
   good: "Good"
-  skills: "Skills"
+  jobs: "Jobs"
   hospitality: "Hospitality"
   others: "Others"
 

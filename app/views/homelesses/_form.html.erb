@@ -39,6 +39,13 @@
   </div>
 
   <div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
+    <%= t.label :skills %>
+    <div class="col-10">
+  <%= t.input :skills, label: false,  placeholder: "#{t('optional')}", input_html:{class: "form-control"} %>
+  </div>
+  </div>
+
+  <div class="sign-in-text form-group row"> <i class="fa fa-file-text-o" aria-hidden="true"></i>
     <%= t.label :story %>
     <div class="col-10">
   <%= t.input :story, label: false,  placeholder: "#{t('optional')}", input_html:{class: "form-control"} %>

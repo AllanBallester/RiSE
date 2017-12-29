@@ -1,5 +1,5 @@
 class Intention < ApplicationRecord
-  OPTIONS=["food", "good", "skills", "hospitality", "others"]
+  OPTIONS=["food", "good", "jobs", "hospitality", "others"]
   belongs_to :riser
   belongs_to :homeless
 
