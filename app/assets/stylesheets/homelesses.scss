@@ -141,6 +141,13 @@ background-position: center;
   opacity: 0.4;
 }
 
+
 .breathe {
   margin-top:20px;
+
+  
+.up {
+  position:relative;
+    transition: .5s ease;
+    top: -5px;
 }
