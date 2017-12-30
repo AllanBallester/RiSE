@@ -1,28 +1,11 @@
 en:
 
 #Navbar
-  our-story: "Our story"
-  contribute: "Contribute"
   sign_out: "Sign out"
 
 
 #Footer
   footer: "This website and all RiSE Social Business is made by people's time and kindness. Nothing else."
-
-#Ourstory
-  read-born: "Read about where we were born."
-  button-read: "Read article"
-  read-guts: "What's is in our head and guts ?"
-  button-manifesto: "Read RiSE Manifesto"
-
-#JoinUs
-  photo-line: "You want to shorten Human bareers with your camera."
-  photo-button: "RiSE Photo Exhibitions"
-  code-line: "You know Rails and want to code against poverty."
-  code-button: "Join one Coding Sprint"
-  city-line: "You want to accelerate the growth of RiSE in your city."
-  city-button: "Become a City Growth"
-
 
 #HomePage
   title: "Rise - Homelesses Giving and Sharing Platform"
@@ -30,14 +13,15 @@ en:
   where: "Where?"
   find: "Find"
   second-line: "RiSE is 100% collaborative."
+
+#Update Form
   update: "Update Homeless position"
-    #Update Form
 
 
+#AddnewHomeless Form
   add-homeless: "Add new Homeless"
-  #AddnewHomeless Form
+
   feedback: "How was your Riser's experience ?"
-    #Add Form
 
 #HomeFeedbacks
   name1: "Alexandre"
@@ -72,8 +56,6 @@ en:
   add-picture: "Add/Upload a Profile picture"
   update-picture: "Update Profile Picture"
   edit-name: "Edit"
-    #Edit Form
-
 
   contact-pos: "Show contact and position"
   contact-pos2: "Show contact and position"
@@ -83,26 +65,26 @@ en:
   choose-intention: "Choose your intention"
   get-contact-button: "Show contact and position"
 
-  #Intentions list intention.rb
+#Intentions list intention.rb
   food: "Food"
   good: "Good"
   skills: "Skills"
   hospitality: "Hospitality"
   others: "Others"
 
-  #Intentions Alerts : create_interests.js
+#Intentions Alerts : create_interests.js
   select-intention: "What would you like to give ? !!"
   choose: "Choose an intention at least dear !!"
   #phone-reg:
   #phone-nonreg:
 
-  #modal-phone
+#modal-phone
   no-phone: "No one Phone registered yet. However the profile's map is now revealed."
   last-position: "You can find now the last 5"
   blue-pin: "'s position. Blue Pin show the most recent one."
   close: "Close"
 
-  #modalwithpone
+#modalwithpone
   phone-reg: "Phone registered."
   contact: "Contact"
   at: "at"
@@ -115,14 +97,14 @@ en:
   blank: "If not leave it blank"
   optional: "Optional"
 
-  #PostReview
+#PostReview
   give-review: "Give your review !!!"
   content: "Content"
   add-upload: "Add/Upload a Review picture"
   create-review: "Create Review"
 
 
-  #Update Homeless form
+#Update Homeless form
   update-loc: "Update Homeless location"
   last-name: "Last name"
   name: "Name"
@@ -130,9 +112,10 @@ en:
   new-loc: "New Location ?*"
   update-loc: "Update Homeless location"
 
-  #Add New Homeless Form
+#Add New Homeless Form
   kind-conta: "Kindness is contagious. Keep going."
-  #ActiveRecord
+
+#ActiveRecord
   activerecord:
     models:
       homeless: "Homeless"
@@ -146,7 +129,7 @@ en:
         fb_account: "Facebook account"
 
 
-  #Logs in - - - - - - -  - - - - - - - - - - - -
+#Logs in - - - - - - -  - - - - - - - - - - - -
   #Log in
   login: "Log in to continue"
   forgot-password: "Forgot your password?"
@@ -154,14 +137,14 @@ en:
   sign-up: "Sign up"
   not-rec: "Didn't receive confirmation instructions?"
 
-  #Forgot Password
+#Forgot Password
   forgot: "Forgot your password?"
   send-pass: "Send me reset password instructions"
 
-  #Sign up
+#Sign up
   sign-up: "Sign up to continue"
   sign-up2: "Sign up"
 
-  #Confirm Email
+#Confirm Email
   confirm: "Resend confirmation instructions"
   confirm-button: "Resend confirmation instructions"
