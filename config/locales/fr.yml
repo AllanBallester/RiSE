@@ -9,7 +9,7 @@ fr:
 
 #HomePage
   title: "RiSE - Plateforme de partage aux sans-abris"
-  baseline: "Offrez nourriture, biens, compétences ou hospitalité aux personnes dans le besoin"
+  baseline: "Offrez nourriture, biens, travail ou hospitalité aux personnes dans le besoin"
   where: "Ou?"
   find: "Rechercher"
   second-line: "RiSE est 100% collaboratif."
@@ -45,7 +45,9 @@ fr:
 
   #Show - - - - - - - - - - - - - - - - - - - -
   story: "Histoire"
+  skills: "Compétences"
   create-story: "Ajouter l'histoire"
+  create-skills: "Ajouter Compétences"
   add-picture: "Ajouter une photo de profil"
   update-picture: "Confirmez photo"
   edit-name: "Editer"
@@ -60,7 +62,7 @@ fr:
 #Intentions list intention.rb
   food: "Nourriture"
   good: "Biens"
-  skills: "Compétences"
+  jobs: "Travail"
   hospitality: "Hospitalité"
   others: "Autres"
 

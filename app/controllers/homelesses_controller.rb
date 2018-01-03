@@ -117,6 +117,6 @@ private
   def homeless_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
-    params.require(:homeless).permit(:name, :last_name, :story, :phone, :location, :fb_account )
+    params.require(:homeless).permit(:name, :last_name, :story, :phone, :location, :fb_account, :skills )
   end
 end
