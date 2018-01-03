@@ -25,11 +25,6 @@
      <div class="sign-in-text text-center">
        <h5> <%= @homeless.name%> <%= @homeless.last_name %> </h5>
 
-       <div class="fb-share-button fb-button" data-href="<%= homeless_url(@homeless) %>" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore " target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%= ERB::Util.url_encode homeless_url(@homeless) %>&amp;src=sdkpreparse">Share</a></div>
-
-       <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Share" data-href="<%= homeless_url(@homeless) %>"></script>
-      
        <div class="fb-share-button fb-button up" data-href="<%= homeless_url(@homeless) %>" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore " target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%= ERB::Util.url_encode homeless_url(@homeless) %>&amp;src=sdkpreparse">Share</a></div>
 
        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
@@ -82,9 +77,9 @@
 
 <div class= "text-center">
   <% if riser_signed_in? %>
-    <button id="myBtn" class="btn btn-yours btn-contact" > <%= t("contact-pos") %>  </button>
+    <button id="myBtn" class="btn btn-yours btn-contact" > <%= t("contact-pos") %> <%= @homeless.name %> </button>
   <%else%>
-    <%= link_to t("contact-pos2"), new_riser_session_path , class: "btn btn-yours btn-contact" %>
+    <%= link_to "#{t('contact-pos2')} #{@homeless.name} " , new_riser_session_path , class: "btn btn-yours btn-contact" %>
     </p>
   <% end %>
 <div>
