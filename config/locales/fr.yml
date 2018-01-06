@@ -49,11 +49,14 @@ fr:
   create-story: "Ajouter l'histoire"
   create-skills: "Ajouter Compétences"
   add-picture: "Ajouter une photo de profil"
+  oops: "Oops !!! Et votre photo ?"
   update-picture: "Confirmez photo"
   edit-name: "Editer"
+  uploadpic: "Ajouter une photo de profil"
 
-  contact-pos: "Afficher contact et position"
-  contact-pos2: "Afficher contact et position"
+
+  contact-pos: "Donner à"
+  contact-pos2: "Donner à"
 
 #Modal Intentions
   choose-intention: "Choisissez votre intention"
@@ -68,7 +71,7 @@ fr:
 
   #Intentions Alerts : create_interests.js
   select-intention: "Que souhaiteriez vous donner ? !!"
-  choose: "Choisissez au moins une intention !!"
+  choose: "Choisissez au moins une intention."
   #phone-reg:
   #phone-nonreg:
 
@@ -90,6 +93,7 @@ fr:
   info-update: "Quelle information à mettre à jour?"
   blank: "Si aucun, laissez le champ vide"
   optional: "Optionnel"
+  edit: "Editer"
 
   #PostReview
   give-review: "Donnez votre feedback !!!"
@@ -107,6 +111,9 @@ fr:
 
   #Add New Homeless Form
   kind-conta: "La générosité est contagieuse. Tu y es presque."
+  addhomeless: "Ajouter un sans-abris"
+
+
   #ActiveRecord
   activerecord:
     models:
@@ -119,6 +126,8 @@ fr:
         phone: "Contact"
         location: "Position"
         fb_account: "Compte Facebook"
+        skills: "Compétences"
+
 
 
   #Logs in - - - - - - - - - -  - - - - -  - - - -

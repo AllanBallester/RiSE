@@ -66,7 +66,7 @@
     </div>
   <% else %>
     <div>
-    <%= link_to "Upload picture", sign_in_homeless_photos_path(@homeless), class: "btn btn-yours" %>
+    <%= link_to "#{t('uploadpic')}", sign_in_homeless_photos_path(@homeless), class: "btn btn-yours" %>
     </div>
   <% end %>
 <%= link_to "#{t('edit-name')} #{@homeless.name}", edit_homeless_path(@homeless), class: "btn btn-primary btn-edit" %>

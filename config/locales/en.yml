@@ -56,8 +56,10 @@ en:
   create-story: "Create Story"
   create-skills: "Add skills"
   add-picture: "Add/Upload a Profile picture"
+  oops: "Oops !!! And your picture ?"
   update-picture: "Update Profile Picture"
   edit-name: "Edit"
+  uploadpic: "Upload profile picture"
 
   contact-pos: "Give to"
   contact-pos2: "Give to"
@@ -98,6 +100,7 @@ en:
   info-update: "Any informations to update ?"
   blank: "If not leave it blank"
   optional: "Optional"
+  edit: "Edit"
 
 #PostReview
   give-review: "Give your review !!!"
@@ -111,11 +114,12 @@ en:
   last-name: "Last name"
   name: "Name"
   search-button: "Search"
-  new-loc: "New Location ?*"
+  new-loc: "New Location ?"
   update-loc: "Update Homeless location"
 
 #Add New Homeless Form
   kind-conta: "Kindness is contagious. Keep going."
+  addhomeless: "Add an homeless"
 
 #ActiveRecord
   activerecord:
