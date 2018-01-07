@@ -11,7 +11,7 @@ class PagesController < ApplicationController
         { name: t("name3"),
           description: t("description3") ,
           location: t("location3"),
-          picture: "romain.png"}]
+          picture: "edgar.png"}]
   end
 
   def donate
