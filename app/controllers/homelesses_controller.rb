@@ -95,7 +95,7 @@ class HomelessesController < ApplicationController
 
 
 
-      UserMailer.review(current_riser, @homeless).deliver_now
+      UserMailer.review(current_riser, @homeless).deliver_later(wait: 24.hours)
     end
     respond_to do |format|
       format.js

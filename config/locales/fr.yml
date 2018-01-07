@@ -111,8 +111,7 @@ fr:
 
   #Add New Homeless Form
   kind-conta: "La générosité est contagieuse. Tu y es presque."
-  addhomeless: "Ajouter un sans-abris"
-
+  add-hml: "Ajouter un sans-abris"
 
   #ActiveRecord
   activerecord:

@@ -19,7 +19,8 @@ es:
 
 
 #AddnewHomeless Form
-  add-homeless: "Agrega un nuevo sin techo"
+  add-homeless: "Add new Homeless"
+  add-hml: "Añadir un sin techo"
 
   feedback: "¿Cómo fué tu experiencia Rise?"
 
