@@ -5,148 +5,157 @@ es:
 
 
 #Footer
-  footer: "This website and all RiSE Social Business is made by people's time and kindness. Nothing else."
+  footer: "Esta web y todo el Negocio Social de RiSE es realizado por el tiempo de personas y la amabilidad. Nada más."
 
 #HomePage
-  title: "Rise - Homelesses Giving and Sharing Platform"
-  baseline: "Give food, goods, skills or hospitality to people in need"
-  where: "Where?"
-  find: "Find"
-  second-line: "RiSE is 100% collaborative."
+  title: "Rise- Plataforma para compartir y recibir para gente sin techo"
+  baseline: "Comparte comida, ropa, trabajos o hospitalidad a la gente con necesidades"
+  where: "¿Dónde?"
+  find: "encuentra"
+  second-line: "RiSE es 100% colaborativo"
 
 #Update Form
-  update: "Update Homeless position"
+  update: "Señala la posición de un sin techo"
 
 
 #AddnewHomeless Form
   add-homeless: "Add new Homeless"
   add-hml: "Añadir un sin techo"
 
-
-  feedback: "How was your Riser's experience ?"
+  feedback: "¿Cómo fué tu experiencia Rise?"
 
 #HomeFeedbacks
-  name1: "Alexandre"
-  description1: As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Roland and give it to him. He was actually super cool .
-  location1: "Lille - France"
+  name1: "Alejandro"
+  description1: "Pedimos mucha comida en un restaurante. En vez de dejar la comida en la mesa, pedimos una bolsa de comida para llevar, nos conectamos a Rise, encontramos a Roland y se la dimos. Fué muy amable!"
+  location1: "Paris - France"
 
   name2: "Lea"
-  description2: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Diane, contact him and give it hand by hand.Now everyday"
-  location2: "Ho Chi minh-Vietnam"
+  description2: "Rise fué muy sencillo de utilizar. Tenía que tirar 3 camisetas. Normalmente las depositaba en un contenedor para ropa usada pero esta vez utilizando  Rise encontré a Diana, me puse en contacto con ella y le di las camisetas en mano. Ahora uso Rise en mi día a día."
+  location2: "Budapest - Hungary"
 
 
   name3: "Romain"
-  description3: " I asked Tom which I give food everyday when was his last shower ? I end even cutting his beard and my wife insisted him to stay for dinner. Was very thoughtful and simple moment"
-  location3: "New York - United States"
-
+  description3: "Pregunté a Tom, al cual doy comida todos los días, cuando se había dado una ducha por última vez y terminé incluso recortando su barba. Mi mujer insistió en que se quedara a cenar con nosotros. Fué un momento muy profundo y sencillo."
+  location3: "London - United Kingdom"
 
 
 #Index - - - - - - - -  - - - - - - - - -
-  where: "Where?"
-  find: "Find"
-  punchline: "No Homeless listed yet or missing ?"
-  add-homeless: "Add new Homeless"
+  where: "¿Dónde?"
+  find: "Encontrar"
+  punchline: "¿Ningún sin techo apuntado ya o desaparecido ?"
+  add-homeless: "Agrega un nuevo sin techo"
   view-button: "View"
-  loc-updated: "Location updated"
-  ago: "ago"
-  view-modal: "View"
+  loc-updated: "Posición actualizada"
+  ago: "hace"
+  view-modal: "modo visión"
+
 
 
 #Show - - - - - - - - -  - - - - - - - -
-  story: "Story"
-  create-story: "Create Story"
-  add-picture: "Add/Upload a Profile picture"
-  update-picture: "Update Profile Picture"
-  edit-name: "Edit"
+  story: "Historia"
+  skills: "Competencias"
+  create-story: "Crea una historia"
+  create-skills: "Añadir competencias"
+  add-picture: "Agrega/sube una foto de perfil"
+  oops: "Oops !!! Y tu foto ?"
+  update-picture: "Sube una foto de perfil"
+  edit-name: "Edita"
+  uploadpic: "Agregar una foto de profil"
 
-  contact-pos: "Show contact and position"
-  contact-pos2: "Show contact and position"
+
+  contact-pos: "Dar a"
+  contact-pos2: "Dar a"
+
 
 
 #Modal Intentions
-  choose-intention: "Choose your intention"
-  get-contact-button: "Show contact and position"
+  choose-intention: "Elige tu intención"
+  get-contact-button: "Muestra el contacto y la posición"
 
 #Intentions list intention.rb
-  food: "Food"
-  good: "Good"
-  skills: "Skills"
-  hospitality: "Hospitality"
-  others: "Others"
+  food: "Alimentos"
+  good: "Ropa"
+  jobs: "Trabajos"
+  hospitality: "Hospitalidad"
+  others: "Otros"
 
 #Intentions Alerts : create_interests.js
-  select-intention: "What would you like to give ? !!"
-  choose: "Choose an intention at least dear !!"
+  select-intention: "¿Qué te gustaría compartir/dar?"
+  choose: "Elige una intención por los menos."
   #phone-reg:
   #phone-nonreg:
 
 #modal-phone
-  no-phone: "No one Phone registered yet. However the profile's map is now revealed."
-  last-position: "You can find now the last 5"
-  blue-pin: "'s position. Blue Pin show the most recent one."
-  close: "Close"
+  no-phone: "Ningún teléfono registrado todavia. De todas maneras el mapa de perfil está ahora visible."
+  last-position: "Ahora puedes encontrar hasta maximo las últimas 5"
+  blue-pin: "posiciónes. El pin azul muestra la más reciente."
+  close: "Cierra"
 
 #modalwithpone
-  phone-reg: "Phone registered."
-  contact: "Contact"
-  at: "at"
-  define: "and define When and What to give."
-  addition: "In addition you can find now the last 5"
-  position-map: "'s position in the profile map. Blue Pin show the most recent."
+  Phone-reg: "Teléfono ya registrado"
+  contact: “Contacto”
+  at: "a"
+  define: "y define qué y cuando darlo"
+  addition: "puedes encontrar ahora hasta los últimos 5 posiciónes de"
+  position-map: "en el mapa del perfil. El pin azul muestra el más reciente"
 
 #Edit Homeless
-  info-update: "Any informations to update ?"
-  blank: "If not leave it blank"
-  optional: "Optional"
+  info-update: "Alguna información que agregar?"
+  blank: "si no, deja un espacio en blanco"
+  optional: "Opcional"
+  edit: "Editar"
+
 
 #PostReview
-  give-review: "Give your review !!!"
-  content: "Content"
-  add-upload: "Add/Upload a Review picture"
-  create-review: "Create Review"
-
+  give-review: "Deja tus comentarios"
+  content: "Contenido"
+  add-upload: "Agrega/sube tu foto de comentario"
+  create-review: "Crea un comentario"
 
 #Update Homeless form
-  update-loc: "Update Homeless location"
-  last-name: "Last name"
-  name: "Name"
-  search-button: "Search"
-  new-loc: "New Location ?*"
-  update-loc: "Update Homeless location"
+  update-loc: "Sube la posición de un sin techo"
+  last-name: "Apellido"
+  name: "Nombre"
+  search-button: "Buscar"
+  new-loc: "¿Nueva localización?"
+  update-loc: "Sube la posición de un sin techo"
 
 #Add New Homeless Form
-  kind-conta: "Kindness is contagious. Keep going."
+  kind-conta: "La amabilidad es contagiosa. Sigue"
+  addhomeless: "Añadir un sin techo"
+
 
 #ActiveRecord
   activerecord:
     models:
-      homeless: "Homeless"
+      homeless: "Sin techo"
     attributes:
       homeless:
-        name: "Name"
-        story: "Story"
-        last_name: "Last name"
-        phone: "Phone"
-        location: "Location"
-        fb_account: "Facebook account"
-
+        name: "Nombre"
+        story: "Historia"
+        last_name: "Apellido"
+        phone: "Teléfono"
+        location: "Localización"
+        fb_account: "Cuenta de Facebook"
+        skills: "Competencias"
 
 #Logs in - - - - - - -  - - - - - - - - - - - -
   #Log in
-  login: "Log in to continue"
-  forgot-password: "Forgot your password?"
-  not-account: "Do not have an account yet ?"
-  sign-up: "Sign up"
-  not-rec: "Didn't receive confirmation instructions?"
+  login: "Entra para continuar"
+  forgot-password: "¿Has perdido tu contraseña?"
+  not-account: "¿Aún no tienes una cuenta?"
+  sign-up: "Firma"
+  not-rec: "¿No has recibido las instrucciones de registro?"
 
 #Forgot Password
-  forgot: "Forgot your password?"
-  send-pass: "Send me reset password instructions"
+  forgot: "¿Has perdido tu contraseña?"
+  send-pass: "Envíame las instrucciones de reset"
 
-#Sign up
-  sign-up: "Sign up to continue"
-  sign-up2: "Sign up"
+#Sign up (yo lo dejaría en inglés)
+  sign-up: "Firma para continuar"
+  sign-up2: "Firma"
 
 #Confirm Email
-  confirm: "Resend confirmation instructions"
-  confirm-button: "Resend confirmation instructions"
+  confirm: "Reenvia instrucciones de confirmación"
+  confirm-button: "Reenvia instrucciones de confirmación"
+

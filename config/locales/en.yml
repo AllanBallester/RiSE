@@ -26,16 +26,16 @@ en:
 #HomeFeedbacks
   name1: "Alexandre"
   description1: As it happened we ordered too much at restaurant. Instead of wasting we asked for a dobbybag, plug Rise, find Roland and give it to him. He was actually super cool .
-  location1: "Lille - France"
+  location1: "Paris - France"
 
   name2: "Lea"
   description2: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Diane, contact him and give it hand by hand.Now everyday"
-  location2: "Ho Chi minh-Vietnam"
+  location2: "Budapest - Hungary"
 
 
   name3: "Romain"
   description3: " I asked Tom which I give food everyday when was his last shower ? I end even cutting his beard and my wife insisted him to stay for dinner. Was very thoughtful and simple moment"
-  location3: "New York - United States"
+  location3: "London - United Kingdom"
 
 
 
@@ -56,8 +56,10 @@ en:
   create-story: "Create Story"
   create-skills: "Add skills"
   add-picture: "Add/Upload a Profile picture"
+  oops: "Oops !!! And your picture ?"
   update-picture: "Update Profile Picture"
   edit-name: "Edit"
+  uploadpic: "Upload profile picture"
 
   contact-pos: "Give to"
   contact-pos2: "Give to"
@@ -98,6 +100,7 @@ en:
   info-update: "Any informations to update ?"
   blank: "If not leave it blank"
   optional: "Optional"
+  edit: "Edit"
 
 #PostReview
   give-review: "Give your review !!!"
@@ -111,12 +114,13 @@ en:
   last-name: "Last name"
   name: "Name"
   search-button: "Search"
-  new-loc: "New Location ?*"
+  new-loc: "New Location ?"
   update-loc: "Update Homeless location"
 
 #Add New Homeless Form
   kind-conta: "Kindness is contagious. Keep going."
   add-hml: "Add Homeless"
+
 
 #ActiveRecord
   activerecord:

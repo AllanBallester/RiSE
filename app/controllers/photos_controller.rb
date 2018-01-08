@@ -17,7 +17,7 @@ class PhotosController < ApplicationController
     if @photo.save
       redirect_to homeless_path(@photo.homeless)
     else
-      flash[:alert] = "Oops !!! And your picture ?"
+      flash[:alert] = "#{t('oops')}"
       redirect_to homeless_path(@photo.homeless)
     end
   end
