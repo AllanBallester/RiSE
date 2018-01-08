@@ -116,6 +116,7 @@ en:
 
 #Add New Homeless Form
   kind-conta: "Kindness is contagious. Keep going."
+  add-hml: "Add Homeless"
 
 #ActiveRecord
   activerecord:
