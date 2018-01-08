@@ -81,13 +81,13 @@ es:
 
 #Intentions Alerts : create_interests.js
   select-intention: "¿Qué te gustaría compartir/dar?"
-  choose: "Elige una intención por los menos."
+  choose: "Elige una intención por lo menos."
   #phone-reg:
   #phone-nonreg:
 
 #modal-phone
   no-phone: "Ningún teléfono registrado todavia. De todas maneras el mapa de perfil está ahora visible."
-  last-position: "Ahora puedes encontrar hasta maximo las últimas 5"
+  last-position: "Ahora puedes encontrar hasta máximo las últimas 5"
   blue-pin: "posiciónes. El pin azul muestra la más reciente."
   close: "Cierra"
 
@@ -95,8 +95,8 @@ es:
   Phone-reg: "Teléfono ya registrado"
   contact: “Contacto”
   at: "a"
-  define: "y define qué y cuando darlo"
-  addition: "puedes encontrar ahora hasta los últimos 5 posiciónes de"
+  define: "y define qué y cuándo darlo"
+  addition: "puedes encontrar ahora hasta las últimas 5 posiciones de"
   position-map: "en el mapa del perfil. El pin azul muestra el más reciente"
 
 #Edit Homeless
@@ -152,8 +152,8 @@ es:
   send-pass: "Envíame las instrucciones de reset"
 
 #Sign up (yo lo dejaría en inglés)
-  sign-up: "Firma para continuar"
-  sign-up2: "Firma"
+  sign-up: "Registrate para continuar"
+  sign-up2: "Registrate"
 
 #Confirm Email
   confirm: "Reenvia instrucciones de confirmación"
