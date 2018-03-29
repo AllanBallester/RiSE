@@ -83,6 +83,8 @@ gem 'money-rails'
 gem 'stripe'
 gem 'coffee-script'
 
+gem "letter_opener", group: :development
+
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
