@@ -80,14 +80,15 @@ color: black;
 
 .text-donation {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+  margin-top: 200px;
 }
 
 .donation {
   width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .inline-buttons {
@@ -136,6 +137,10 @@ background-position: center;
   margin-top: 60px;
 }
 
+.donationdone {
+  color:white;
+}
+
 .modalito {
   color: #FF847C;
   opacity: 0.4;
@@ -150,4 +155,8 @@ background-position: center;
   position:relative;
     transition: .5s ease;
     top: -5px;
+}
+
+.bitspace {
+  margin-top: 25px;
 }

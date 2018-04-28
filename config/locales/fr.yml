@@ -149,3 +149,8 @@ fr:
   #Confirm Email
   confirm: "Renvoyer l'email de confirmation"
   confirm-button: "Renvoyer l'email de confirmation"
+
+  #Donation Page
+  donationn: "Découvrez en transparence ce que nous faisons de vos dons :"
+  readart: "Lire l'article"
+  backhome: "Revenir à l'accueil"

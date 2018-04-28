@@ -1,12 +1,16 @@
-<div class= "banner cover middle-pic" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1504212370/1_1_dzdz_e4wvuq.jpg');">
+<div class= "banner cover middle-pic" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1524911303/mf8zxtk49xuhji15gqep.jpg');">
 
 
 
-<div class="col-xs-12 col-sm-8 col-md-8 offset-4">
-<p class= "text-donation"> Support us to keep our social business growthing (also alive !). </p>
+<div class="col-xs-12 col-sm-8 col-md-8 offset-4 ">
+<p class= "text-donation hidden-xs"> <%= t("taxesoff") %> <br> <%= t("donationn") %>   </p>
+
+<p class= "hidden-sm hidden-md hidden-lg"> <%= t("taxesoff") %> <%= t("donationn") %> </p>
 
 
 <div class = "text-center">
+
+  <%= link_to t("readart"), "https://medium.com/@allan.ballester/at-rise-we-do-not-cheat-your-money-we-give-it-colours-for-people-in-need-how-62ff48c39529" , class: "navbar-wagon-item navbar-wagon-link btn-yours4" %>
 
 <% [5, 10, 25, 50].each do |amount| %>
 
@@ -15,7 +19,7 @@
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
       data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
       data-name="RiSE"
-      data-description=" RiSE 5€ Donation"
+      data-description=" RiSE <%= amount %>€ Donation"
       data-amount="<%= amount*100 %>"
       data-label="Donate <%= amount %>€"
       data-email="<%= current_riser&.email%>"

@@ -1,13 +1,23 @@
 <div class='row'>
+
+  <div class= "banner cover middle-pic" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dk9kkvy1o/image/upload/v1524911303/mf8zxtk49xuhji15gqep.jpg');">
+
   <div class="text-center ">
 
-  <%=image_tag ("http://res.cloudinary.com/dk9kkvy1o/image/upload/c_scale,w_433/v1504287697/LogoPink_mxp8ls.png") %>
-  <h1 class= "sign-in-text">Donation successfull
-  !!</h1>
+  <h1 class= "sign-in-text2 donationdone hidden-xs"> <%= t("donationsucc") %> <br><%= t("kindness") %></h1>
 
     <!-- <p class= "sign-in-text give-me-space">Status: <%= @donation.state %></p>
     <p class="sign-in-text">Amount: <%= humanized_money_with_symbol(@donation.amount) %></li> -->
 
-    <p class= "sign-in-text give-me-space"> <strong> You will received soon an email to notify you of this payment information, please note to check !! You will also know who you helped around the world. </strong> </p>
+    <p class= "sign-in-text2 hidden-sm hidden-md hidden-lg"> <%= t("donationsuc") %> <br> <%= t("soonemail") %> <br></p>
+
+  <div class= "bitspace">
+    <%= link_to t("readart"), "https://medium.com/@allan.ballester/at-rise-we-do-not-cheat-your-money-we-give-it-colours-for-people-in-need-how-62ff48c39529" , class: "navbar-wagon-item navbar-wagon-link btn-yours4" %>
+  <%= link_to t("backhome"), "https://www.risekindness.com/" , class: "navbar-wagon-item navbar-wagon-link btn-yours4" %>
+</div>
+
   </div>
 </div>
+
+
+

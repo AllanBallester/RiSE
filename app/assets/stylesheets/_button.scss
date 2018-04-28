@@ -27,10 +27,35 @@
 .btn-yours2 {
   text-decoration: none ;
   background-color: #FF847C;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
   border-radius : 4px;
   font-weight: bold;
   padding : 6px 12px;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+
+.btn-yours3 {
+  text-decoration: none ;
+  background-color: #008cdd;
+  color: white;
+  border-radius : 4px;
+  font-weight: bold;
+  padding : 0.25em 10px;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+
+.btn-yours4 {
+  text-decoration: none ;
+  background-color: #FF847C;
+  color: white;
+  border-radius : 4px;
+  font-weight: bold;
+  padding : 8px 12px;
   text-align: center;
   transition: all ease 0.3s;
 }

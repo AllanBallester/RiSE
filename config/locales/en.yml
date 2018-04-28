@@ -155,3 +155,13 @@ en:
 #Confirm Email
   confirm: "Resend confirmation instructions"
   confirm-button: "Resend confirmation instructions"
+
+#Donation Page
+  donationn: "Discover in total transparency what we do with your donations :"
+  taxesoff: "Get 75% of your RiSE donation off your revenue taxes"
+  readart: "Read Article"
+  donationsucc: "Donation successfull. You will received soon an email !!"
+  kindness: "Thanks for your kindness."
+  donationsuc: "Donation successfull !!"
+  soonemail: "You will receive soon an email."
+  backhome: "Back to Homepage"
