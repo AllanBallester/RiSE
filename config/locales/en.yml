@@ -9,7 +9,7 @@ en:
 
 #HomePage
   title: "Rise - Homelesses Giving and Sharing Platform"
-  baseline: "Give food, goods, jobs or hospitality to people in need"
+  baseline: "Give food, goods, jobs or hospitality to homeless people"
   where: "Where?"
   find: "Find"
   second-line: "RiSE is 100% collaborative."
@@ -21,7 +21,7 @@ en:
 #AddnewHomeless Form
   add-homeless: "Add new Homeless"
 
-  feedback: "How was your Riser's experience ?"
+  feedback: "How was your RiSEr's experience ?"
 
 #HomeFeedbacks
   name1: "Alexandre"
@@ -30,7 +30,7 @@ en:
 
   name2: "Lea"
   description2: " Rise was very simple for me. I had to throw 3 tee shirts . I used to put them on the bin straight. Instead I just find Diane, contact her and give it hand by hand.Now everyday"
-  location2: "Budapest - Hungary"
+  location2: "Lille - France"
 
 
   name3: "Romain"
