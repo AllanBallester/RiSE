@@ -70,6 +70,14 @@ body {
 .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
     opacity: 1;
 }
+
+.team-member:active .team-hover, .team-member:active .team-hover .desk, .team-member:active .team-hover .s-link {
+    opacity: 1;
+}
+.team-member:focus .team-hover, .team-member:focus .team-hover .desk, .team-member:focus .team-hover .s-link {
+    opacity: 1;
+}
+
 .team-hover .desk {
     position: absolute;
     top: 0%;
