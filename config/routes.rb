@@ -16,6 +16,7 @@ resources :donations, only: [:show, :new, :create]
     get '/pages/join_us'
     get '/pages/donate'
     get '/pages/developers'
+    get 'pages/risers'
     get 'reviews/new'
 
     root to: "pages#home"
