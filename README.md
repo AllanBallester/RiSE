@@ -1,24 +1,38 @@
-# README
+## Getting Started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation
 
-Things you may want to cover:
+Language : Install Ruby 
+👉https://www.ruby-lang.org/en/documentation/installation/
 
-* Ruby version
 
-* System dependencies
+Database : Install postgresql 🐘
+For MAC :
+```
+brew install postgresql
+brew services start postgresql
+```
+For PC :
 
-* Configuration
 
-* Database creation
+⋔ Fork the project ( https://github.com/AllanBallester/RiSE )
 
-* Database initialization
+Gem installation :
+```
+bundle install
+```
 
-* How to run the test suite
+```
+rails db:create
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Contributing
 
-* Deployment instructions
+1. Project already Forked ! ( https://github.com/AllanBallester/RiSE )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
 
-* ...
+Don't forget to give it star ⭐️
