@@ -32,11 +32,11 @@ rails db:migrate
 
 Open a new tab and start a `rails -s` 🤟
 
-### Get your first code pushed in less than 10 min
+### Contribute
 
 Project forked already ? ( https://github.com/AllanBallester/RiSE/fork )
 
-Pick the ticket you wish [Sexy Cards](https://www.risekindness.com/pages/developers) - [Github](https://github.com/AllanBallester/RiSE/issues) or design your own feat.
+Pick the ticket that appeals you [Sexy Cards](https://www.risekindness.com/pages/developers) VERSUS [Traditional Github](https://github.com/AllanBallester/RiSE/issues) or design your own feat.
 
 Create your feature branch (`git checkout -b my-new-feature`)
 
