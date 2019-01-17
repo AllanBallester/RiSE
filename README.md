@@ -6,9 +6,30 @@ Basically when you invest 1 min here you are building technology in order to con
 ### Prerequisites
 
 Before starting get sure that you get installed :
-* Database : postsegrl 🐘
-* Language : Ruby 💎 (version 2.3.4 - careful if you do not get it yet!)
 
+* Language : Ruby  (version 2.3.4 - careful if you do not get it yet!)
+
+* Database : postgresqgl 🐘
+MAC ;
+```
+brew install postgresql
+brew services start postgresql
+```
+
+PC :
+
+Gem installation 💎 :
+
+```
+gem install bundler
+bundle install
+```
+
+```rails db:create
+rails db:migrate
+```
+
+Open a new tab and start a `rails -s`
 
 ### Get your first code pushed in less than 10 min
 
