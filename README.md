@@ -1,7 +1,7 @@
 # RiSE Homeless Giving
 
 We are basically building technology in order to connect homeless people with local generous citizens.
-Today it's an web app tomorrow it will be an app or an AI, whatever our creativity and craziness will bring us to solve poverty.
+Today it's an web app tomorrow it will be an Android and iOS app or an AI, whatever our creativity and craziness will bring us to solve poverty !!!
 
 
 ### Prerequisites
