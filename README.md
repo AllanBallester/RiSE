@@ -1,6 +1,6 @@
 # RiSE Homeless Giving - Code Against Poverty 👨🏻‍💻!!!
 
-Invest 1 min here and you are building technology that is solving poverty. With our application we connect homeless people with local generous citizens. Today it's an web app tomorrow it will be an Android and iOS app or an AI, whatever our craziness will bring us to solve poverty !!! Already 1000+ donations has been realised thanks to this tech, let's go beyond !
+Invest 1 min here and you are building technology that is solving poverty. With our application we connect homeless people with local generous citizens. Today it's an web app tomorrow it will be an Android and iOS app or an AI, whatever craziness will bring us to solve poverty !!! Already 1000+ donations has been realised thanks to this tech, let's go beyond !
 
 👉https://www.risekindness.com/
 
