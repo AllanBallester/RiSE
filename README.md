@@ -11,7 +11,7 @@ Database : postsegrl 🐘
 Language : Ruby 💎 (version 2.3.4 - careful if you do not get it yet!)
 
 
-# Get ready to contribute in less than 10 min
+### Get ready to contribute in less than 10 min
 
 Fork it ( https://github.com/AllanBallester/RiSE/fork )
 
