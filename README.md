@@ -30,4 +30,4 @@ Create a new Pull Request
 
 ## Authors
 
-* **Allan BALLESTER** - *Founder RiSE* - [Linkedin](https://www.linkedin.com/in/allan-ballester/)
+* **Allan BALLESTER** - *Founder RiSE* - [Patreon](https://www.patreon.com/allanballester) • [Linkedin](https://www.linkedin.com/in/allan-ballester/)
