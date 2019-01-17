@@ -15,7 +15,7 @@ brew install postgresql
 brew services start postgresql
 ```
 
-PC :
+Fork the project ( https://github.com/AllanBallester/RiSE/fork )
 
 Gem installation 💎 :
 
@@ -33,7 +33,7 @@ Open a new tab and start a `rails -s`
 
 ### Get your first code pushed in less than 10 min
 
-Fork it ( https://github.com/AllanBallester/RiSE/fork )
+Project forked already ? ( https://github.com/AllanBallester/RiSE/fork )
 
 Pick the ticket you wish [Sexy Cards](https://www.risekindness.com/pages/developers) - [Github](https://github.com/AllanBallester/RiSE/issues) or design your own feat.
 
