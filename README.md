@@ -43,7 +43,7 @@ Commit your changes (`git commit -am 'Add some feature`)
 
 Push to the branch (`git push origin my-new-feature`)
 
-Create a new Pull Request and kick my ass on the channel [#code](https://join.slack.com/t/needafewgotalot/shared_invite/enQtNTI2MDU4NzU1NzY3LTI3ZGRhMTQwNGI0YjBkYTU4YTgxYjczZmRjNjZhMzkwZTBlNjI3NDI5ZGFkN2JmNGQ0MzNmZTYzMGIyMmE2ZDU) 
+Create a new Pull Request and spam me with Taggs 👋
 
 ## Acknowledgments
 
