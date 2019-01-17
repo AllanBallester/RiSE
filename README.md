@@ -1,5 +1,9 @@
 # Get ready to contribute in less than 10 min
 
+Database : postsegrl 🐘
+Language : Ruby 💎 (version 2.3.4 - careful if you do not get it yet!)
+
+
 Fork it ( https://github.com/AllanBallester/RiSE/fork )
 
 Create your feature branch (git checkout -b my-new-feature)
