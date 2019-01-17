@@ -15,9 +15,9 @@ brew install postgresql
 brew services start postgresql
 ```
 
-Fork the project ( https://github.com/AllanBallester/RiSE/fork )
+* Fork the project ⋔ ( https://github.com/AllanBallester/RiSE/fork )
 
-Gem installation 💎 :
+* Gem installation 💎
 
 ```
 gem install bundler
@@ -29,7 +29,7 @@ rails db:create
 rails db:migrate
 ```
 
-Open a new tab and start a `rails -s`
+Open a new tab and start a `rails -s` 🤟
 
 ### Get your first code pushed in less than 10 min
 
