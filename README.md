@@ -10,7 +10,6 @@ Before starting get sure that you get installed :
 * Language : Ruby  (version 2.3.4 - careful if you do not get it yet!)
 
 * Database : postgresqgl 🐘
-MAC ;
 ```
 brew install postgresql
 brew services start postgresql
