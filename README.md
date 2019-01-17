@@ -53,4 +53,4 @@ Create a new Pull Request and spam me with Taggs 👋
 
 ## Authors
 
-* **Allan BALLESTER** - *Founder* - [Patreon](https://www.patreon.com/allanballester) • [Linkedin](https://www.linkedin.com/in/allan-ballester/) • [Patreon](https://www.strava.com/athletes/32814343)
+* **Allan BALLESTER** - *Founder* - [Patreon](https://www.patreon.com/allanballester) • [Linkedin](https://www.linkedin.com/in/allan-ballester/) • Remote and ride with me on [Strava](https://www.strava.com/athletes/32814343)
