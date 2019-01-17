@@ -1,7 +1,6 @@
 # RiSE Homeless Giving
 
-We are basically building technology in order to connect homeless people with local generous citizens.
-Today it's an web app tomorrow it will be an Android and iOS app or an AI, whatever our craziness will bring us to solve poverty !!!
+Basically when you invest 1 min here you are building technology in order to connect homeless people with local generous citizens. Today it's an web app tomorrow it will be an Android and iOS app or an AI, whatever our craziness will bring us to solve poverty !!!
 
 
 ### Prerequisites
@@ -32,4 +31,4 @@ Create a new Pull Request
 
 ## Authors
 
-* **Allan BALLESTER** - *Founder RiSE* - [Patreon](https://www.patreon.com/allanballester) • [Linkedin](https://www.linkedin.com/in/allan-ballester/)
+* **Allan BALLESTER** - *Founder* - [Patreon](https://www.patreon.com/allanballester) • [Linkedin](https://www.linkedin.com/in/allan-ballester/) • [Patreon](https://www.strava.com/athletes/32814343)
