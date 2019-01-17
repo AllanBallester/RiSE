@@ -1,24 +1,11 @@
-# README
+# Get ready to contribute in less than 10 min
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fork it ( https://github.com/AllanBallester/RiSE/fork )
 
-Things you may want to cover:
+Create your feature branch (git checkout -b my-new-feature)
 
-* Ruby version
+Commit your changes (git commit -am 'Add some feature')
 
-* System dependencies
+Push to the branch (git push origin my-new-feature)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... BALBLA
+Create a new Pull Request
