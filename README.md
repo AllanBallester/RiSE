@@ -1,24 +1,27 @@
-## Getting Started
+# RiSE Homeless Giving - Code Against Poverty 👨🏻‍💻!!!
 
-### Installation
+Invest 1 min here and you are building technology that is solving poverty. With our application we connect homeless people with local generous citizens. Today it's an web app tomorrow it will be an Android and iOS app or an AI, whatever craziness will bring us to solve poverty !!! Already 1000+ donations has been realised thanks to this tech, let's go beyond !
 
-Language : Install Ruby 
-👉https://www.ruby-lang.org/en/documentation/installation/
+👉https://www.risekindness.com/
 
+### Prerequisites
 
-Database : Install postgresql 🐘
-For MAC :
+Before starting get sure that you get installed :
+
+* Language : Ruby  (version 2.3.4 - careful if you do not get it yet!)
+
+* Database : postgresqgl 🐘
 ```
 brew install postgresql
 brew services start postgresql
 ```
-For PC :
 
+* Fork the project ⋔ ( https://github.com/AllanBallester/RiSE/fork )
 
-⋔ Fork the project ( https://github.com/AllanBallester/RiSE )
+* Gem installation 💎
 
-Gem installation :
 ```
+gem install bundler
 bundle install
 ```
 
@@ -27,12 +30,29 @@ rails db:create
 rails db:migrate
 ```
 
-### Contributing
+Open a new tab and start a `rails -s` 🤟
 
-1. Project already Forked ? ( https://github.com/AllanBallester/RiSE )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+### Contribute
+
+Project forked already ? ( https://github.com/AllanBallester/RiSE/fork )
+
+Pick the ticket that appeals you [Sexy Cards](https://www.risekindness.com/pages/developers) VERSUS [Traditional Github](https://github.com/AllanBallester/RiSE/issues) or design your own feat.
+
+Create your feature branch (`git checkout -b my-new-feature`)
+
+Commit your changes (`git commit -am 'Add some feature`)
+
+Push to the branch (`git push origin my-new-feature`)
+
+Create a new Pull Request and spam me with Taggs 👋
+
+## Acknowledgments
+
+* Everybody that contributed to this project can be find in our [Developers](https://www.risekindness.com/pages/developers) page, tickets ticked with ✅.
+* We promote them and their creativity relating their freelancers links, Linkedin or Github (or whatever you want !)
+
+## Authors
+
+* **Allan BALLESTER** - *Founder* - [Patreon](https://www.patreon.com/allanballester) • [Linkedin](https://www.linkedin.com/in/allan-ballester/) • Remote and ride with me on [Strava](https://www.strava.com/athletes/32814343)
 
 Don't forget to give it star ⭐️
