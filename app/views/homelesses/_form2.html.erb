@@ -1,16 +1,17 @@
 <%= simple_form_for(@homeless) do |t| %>
 
   <div class = "sign-in-text form-group row">
+  <%= t.label :name, "Nickname" %>
   <div class="col-10">
   <%= t.input :name , placeholder: "Peter", input_html:{class: "form-control"}%>
   </div>
   </div>
 
-  <div class="sign-in-text form-group row">
+  <!-- <div class="sign-in-text form-group row">
     <div class="col-10">
   <%= t.input :last_name, placeholder: "Parker", input_html:{class: "form-control"}%>
   </div>
-  </div>
+  </div> -->
 <!--
   <div class="sign-in-text">
     <%= t.label :story %>
