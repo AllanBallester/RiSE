@@ -40,7 +40,7 @@ private
 
 
   def send_welcome_email
-    # UserMailer.welcome(self).deliver_later
+    UserMailer.welcome(self).deliver_later
   end
 
 end
