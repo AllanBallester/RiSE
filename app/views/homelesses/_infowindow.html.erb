@@ -6,7 +6,7 @@
   <%end %>
 
   <div>
-    <p><%= homeless.name %></p>
+    <p><%= homeless.nickname %></p>
     <% if homeless.position_histories.any? %>
     <p class="modalito"> <i class="fa fa-refresh" aria-hidden="true"></i>
  : <%= time_ago_in_words homeless.position_histories.last&.created_at %> <%= t("ago") %> </p>

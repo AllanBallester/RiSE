@@ -2,7 +2,7 @@
 
   <div class = "sign-in-text form-group row">
   <div class="col-10">
-  <%= t.input :name , placeholder: "Peter", input_html:{class: "form-control"}%>
+  <%= t.input :nickname , placeholder: "Peter", input_html:{class: "form-control"}%>
   </div>
   </div>
 
@@ -28,6 +28,27 @@
     <%= t.label :phone %>
     <div class="col-10">
   <%= t.input :phone, label: false, placeholder: "+() 5455664455 ", input_html:{class: "form-control"}%>
+  </div>
+  </div>
+
+  <div class="sign-in-text form-group row"> <i class="fas fa-shoe-prints" aria-hidden="true"></i>
+    <%= t.label :shoe_size %>
+    <div class="col-10">
+  <%= t.input :shoe_size, label: false, collection: [36,37,38,39,40,41,42,43,44,45,46] %>
+  </div>
+  </div>
+
+   <div class="sign-in-text form-group row"> <i class="fas fa-tshirt" aria-hidden="true"></i>
+    <%= t.label :top_size %>
+    <div class="col-10">
+ <%= t.input :top_size, label: false, collection: ["XS","S","M","L","XL","XXL"] %>
+  </div>
+  </div>
+
+   <div class="sign-in-text form-group row">
+    <img src="https://res.cloudinary.com/dk9kkvy1o/image/upload/v1548678715/1379151_xk2djz.svg" class="favicon"/> <%= t.label :bottom_size %>
+    <div class="col-10">
+    <%= t.input :bottom_size, label: false, collection: ["XS-38 ","S-40","M-42","L-44 to 46","XL-48","XXL-50"]%>
   </div>
   </div>
 

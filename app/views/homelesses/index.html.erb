@@ -51,7 +51,7 @@ handler.getMap().setZoom(14);
               <%= cl_image_tag homeless.photos.last.picture %>
             <% end %>
           </div>
-          <h3 class="rised-title"><%= homeless.name %></h3>
+          <h3 class="rised-title"><%= homeless.nickname %></h3>
             <% if homeless.position_histories.any? %>
               <p class="type-rise2"> <%= t("loc-updated") %> <%= time_ago_in_words homeless.position_histories.last&.created_at %> <%= t("ago") %>. </p>
             <% else %>
@@ -73,7 +73,7 @@ handler.getMap().setZoom(14);
       <%= cl_image_tag homeless.photos.last.picture, height: 300, width: 400, crop: :fill, class:"picture-index" %>
     <% end %>
     <div class = "description-homeless">
-      <p> <%= homeless.name %> </p>
+      <p> <%= homeless.nickname %> </p>
       <p> <%= homeless.story %> </p>
     </div>
 

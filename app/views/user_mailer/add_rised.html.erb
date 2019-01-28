@@ -606,9 +606,9 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                            <h3 style="text-align: center;">Thanks for adding <%= @homeless.name %> !!!</h3>
+                            <h3 style="text-align: center;">Thanks for adding <%= @homeless.nickname %> !!!</h3>
 
-<p><span style="font-size:14px">Everybody from your city will be able now to find <strong><%= @homeless.name %></strong> on the map.<br>
+<p><span style="font-size:14px">Everybody from your city will be able now to find <strong><%= @homeless.nickname %></strong> on the map.<br>
 If you got chance next steps are updating&nbsp;the Story, add an Picture, Phone number.<br>
 &nbsp;Little by little. And together. Actually, is your neighbour aware ?</span></p>
 
@@ -634,7 +634,7 @@ If you got chance next steps are updating&nbsp;the Story, add an Picture, Phone 
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Helvetica; font-size: 18px; padding: 18px;">
-                                <a class="mcnButton " title="Refer <%= @homeless.name %> to a friend" href="http://www.facebook.com/sharer/sharer.php?u=<%= ERB::Util.url_encode homeless_url(@homeless) %>" target="_self" style="font-weight: bold;letter-spacing: -0.5px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;"> Share <%= @homeless.name %> profile to friends</a>
+                                <a class="mcnButton " title="Refer <%= @homeless.nickname %> to a friend" href="http://www.facebook.com/sharer/sharer.php?u=<%= ERB::Util.url_encode homeless_url(@homeless) %>" target="_self" style="font-weight: bold;letter-spacing: -0.5px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;"> Share <%= @homeless.nickname %> profile to friends</a>
                             </td>
                         </tr>
                     </tbody>

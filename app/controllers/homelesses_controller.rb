@@ -45,7 +45,7 @@ class HomelessesController < ApplicationController
     @homeless.riser = current_riser
     if @homeless.save
       redirect_to homeless_path(@homeless)
-    elsif Homeless.where(name:@homeless.name, last_name:@homeless.last_name).present?
+    elsif Homeless.where(nickname:@homeless.nickname, last_name:@homeless.last_name).present?
       flash[:alert] = "Oops !!! The Riser already exist. Find him/her on HomePage and update location. Job done !!"
       redirect_to new_homeless_path
     else
@@ -106,7 +106,7 @@ class HomelessesController < ApplicationController
   end
 
   def retrieve
-    @homeless = Homeless.where("lower(name) = ? AND lower(last_name) = ? ", params[:name].downcase, params[:last_name].downcase).first
+    @homeless = Homeless.where("lower(nickname) = ? AND lower(last_name) = ? ", params[:nickname].downcase, params[:last_name].downcase).first
     respond_to do |format|
       format.js
     end
@@ -117,6 +117,6 @@ private
   def homeless_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
-    params.require(:homeless).permit(:name, :last_name, :story, :phone, :location, :fb_account, :skills )
+    params.require(:homeless).permit(:nickname, :last_name, :story, :phone, :location, :fb_account, :skills, :shoe_size, :top_size, :bottom_size )
   end
 end

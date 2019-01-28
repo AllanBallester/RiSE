@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171229125622) do
+ActiveRecord::Schema.define(version: 20190128114241) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(version: 20171229125622) do
   end
 
   create_table "homelesses", force: :cascade do |t|
-    t.string   "name"
+    t.string   "nickname"
     t.text     "story"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "last_name"
     t.string   "phone"
     t.string   "fb_account"
@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(version: 20171229125622) do
     t.string   "location"
     t.integer  "riser_id"
     t.string   "skills"
+    t.integer  "shoe_size"
+    t.string   "top_size"
+    t.string   "bottom_size"
     t.index ["riser_id"], name: "index_homelesses_on_riser_id", using: :btree
   end
 
