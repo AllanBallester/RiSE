@@ -23,6 +23,11 @@
       <%= link_to "Log in", new_session_path(resource_name) %><br />
       <% end -%>
 
+      <div class = "btn-facebookk">
+        <img src="https://res.cloudinary.com/dk9kkvy1o/image/upload/v1548846770/social_facebook_box_white_zeapud.png" class="favicon2" />
+      <%= link_to "Log in with Facebook", riser_facebook_omniauth_authorize_path, :class => "btn-fb-white" %>
+      </div>
+
       <%= render "devise/shared/links" %>
 
 

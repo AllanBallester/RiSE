@@ -1,5 +1,8 @@
 <h5 class="sign-in-title"> <%= t("sign-up") %> </h5>
 
+
+
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4">
@@ -18,6 +21,11 @@
         <%= f.button :submit, t("sign-up2") , class:"btn-yours btn-signup" %>
       </div>
       <% end %>
+
+       <div class = "btn-facebookk">
+        <img src="https://res.cloudinary.com/dk9kkvy1o/image/upload/v1548846770/social_facebook_box_white_zeapud.png" class="favicon2" />
+      <%= link_to "Continue with Facebook", riser_facebook_omniauth_authorize_path, :class => "btn-fb-white" %>
+      </div>
 
       <%= render "devise/shared/links" %>
 
