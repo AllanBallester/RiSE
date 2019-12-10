@@ -2,7 +2,7 @@ class HomelessesController < ApplicationController
   before_action :authenticate_riser!, only: [:new, :create, :edit]
 
   def index
-    @homelesses = Homeless.includes(:position_histories).near(params[:location], 10).order(updated_at: :desc)
+    @homelesses = Homeless.includes(:position_histories).order(updated_at: :desc).near("Paris", 10).first
 
     @hash = Gmaps4rails.build_markers(@homelesses) do |homeless, marker|
       marker.lat homeless.latitude
