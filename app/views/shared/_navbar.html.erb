@@ -9,18 +9,19 @@
   <div class="navbar-wagon-right">
 
      <div class="navbar-wagon-right hidden-xs ">
-      <a href="https://www.patreon.com/allanballester" target="blank" class="navbar-wagon-item navbar-wagon-link btn-yours4"> Become our Patron <i class="fab fa-patreon"></i></a>
+      <a href="https://www.patreon.com/allanballester" target="blank" class="navbar-wagon-item navbar-wagon-link btn-yours4"> <i class="fab fa-patreon"></i> Become a Patron </a>
       <!--<%= link_to t("Support us on Patreon !"), "https://www.patreon.com/allanballester", class: "navbar-wagon-item navbar-wagon-link btn-yours3", target: :_blank %>-->
     </div>
 
+      <div class="fb-share-button goright" data-href="http://www.risekindness.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.risekindness.com%2F&amp;src=sdkpreparse">Share</a></div>
 
-    <div class="navbar-wagon-right hidden-xs ">
-      <%= link_to t("Developers"), pages_developers_path , class: "navbar-wagon-item navbar-wagon-link "%>
-    </div>
+      <!-- <div class="navbar-wagon-right hidden-xs ">
+        <%= link_to t("Developers"), pages_developers_path , class: "navbar-wagon-item navbar-wagon-link "%>
+      </div>
 
-    <div class="navbar-wagon-right ">
-      <%= link_to t("Risers"), pages_risers_path , class: "navbar-wagon-item navbar-wagon-link " %>
-    </div>
+      <div class="navbar-wagon-right ">
+        <%= link_to t("Risers"), pages_risers_path , class: "navbar-wagon-item navbar-wagon-link " %>
+      </div> -->
 
   <div class="navbar-wagon-item">
           <div class="dropdown">
@@ -46,7 +47,7 @@
 
 
       <!-- Avatar with dropdown menu -->
-      <div class="navbar-wagon-item navbar-wagon-right">
+      <div class="navbar-wagon-item navbar-wagon-right ">
         <div class="dropdown">
           <% avatar_url = current_riser.facebook_picture_url || "https://i.stack.imgur.com/HQwHI.jpg" %>
           <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
@@ -66,7 +67,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link " %>
     <% end %>
   </div>
 
