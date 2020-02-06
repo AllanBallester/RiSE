@@ -9,8 +9,8 @@ fr:
 
 #HomePage
   title: "RiSE - Plateforme de partage aux sans-abris"
-  baseline: "Offrez nourriture, biens, travail ou hospitalité a un sans-abris."
-  where: "Ou?"
+  baseline: "Offre de la nourriture, des vêtements, de l'hygiène aux sans-abris."
+  where2: "Dans quelle ville habitez-vous?"
   find: "Rechercher"
   second-line: "RiSE est 100% collaboratif."
   update: "Actualiser la position d'un sans-abris"
