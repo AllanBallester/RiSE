@@ -47,11 +47,11 @@
 
 
       <!-- Avatar with dropdown menu -->
-      <div class="navbar-wagon-item navbar-wagon-right ">
+      <div class="navbar-wagon-item navbar-wagon-right hidden-xs">
         <div class="dropdown">
           <% avatar_url = current_riser.facebook_picture_url || "https://i.stack.imgur.com/HQwHI.jpg" %>
           <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu hidden-xs">
             <!-- <li>
               <%= link_to "#" do %>
                 <i class="fa fa-home"></i>  <%= t(".profile", default: "Homepage") %>
@@ -67,7 +67,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link " %>
+      <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link hidden-xs" %>
     <% end %>
   </div>
 
