@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'Rise<risers_sweat@risekindness.com>'
+  default from: 'Rise<hi@risehomeless.com>'
   layout 'mailer'
 
  def default_url_options(options = {})

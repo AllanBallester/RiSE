@@ -25,3 +25,4 @@ production:
   database: risedevelopment_production
   username: risedevelopment
   password: <%= ENV['RISEDEVELOPMENT_DATABASE_PASSWORD'] %>
+
