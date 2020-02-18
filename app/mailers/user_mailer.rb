@@ -9,7 +9,7 @@ class UserMailer < ApplicationMailer
    def confirm(riser)
     @riser = riser
 
-    mail(to: @riser.email, subject: 'The World of Kindness')
+    mail(to: @riser.email, subject: 'Confirmation instructions')
   end
 
   def welcome(riser)
@@ -30,7 +30,7 @@ class UserMailer < ApplicationMailer
     @riser = riser
 
 
-    mail(to: @riser.email, subject: 'Your Words matter')
+    mail(to: @riser.email, subject: 'Make them shine ✨')
   end
 
 end
