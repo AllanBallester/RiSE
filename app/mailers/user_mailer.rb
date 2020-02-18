@@ -15,7 +15,7 @@ class UserMailer < ApplicationMailer
   def welcome(riser)
     @riser = riser  # Instance variable => available in view
 
-    mail(to: @riser.email, subject: 'Your Presence matter')
+    mail(to: @riser.email, subject: 'Start to RiSE ✌️')
   end
 
   def add_rised(riser, homeless)

@@ -1,19 +1,19 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-  <head>
-    <!-- NAME: SELL PRODUCTS -->
-    <!--[if gte mso 15]>
-    <xml>
-      <o:OfficeDocumentSettings>
-      <o:AllowPNG/>
-      <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
-    <meta charset="UTF-8">
+    <head>
+        <!-- NAME: SELL PRODUCTS -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>*|MC:SUBJECT|*</title>
+        <title>*|MC:SUBJECT|*</title>
 
     <style type="text/css">
     p{
@@ -88,7 +88,7 @@
     a.mcnButton{
       display:block;
     }
-    .mcnImage{
+    .mcnImage,.mcnRetinaImage{
       vertical-align:bottom;
     }
     .mcnTextContent{
@@ -151,7 +151,7 @@
   @style heading 4
   */
     h4{
-      /*@editable*/color:#999999;
+      /*@editable*/color:#949494;
       /*@editable*/font-family:Georgia;
       /*@editable*/font-size:20px;
       /*@editable*/font-style:italic;
@@ -165,15 +165,15 @@
   @section Header Container Style
   */
     #templateHeader{
-      /*@editable*/background-color:#F7F7F7;
+      /*@editable*/background-color:#ff847c;
       /*@editable*/background-image:none;
       /*@editable*/background-repeat:no-repeat;
-      /*@editable*/background-position:center;
+      /*@editable*/background-position:50% 50%;
       /*@editable*/background-size:cover;
       /*@editable*/border-top:0;
       /*@editable*/border-bottom:0;
-      /*@editable*/padding-top:45px;
-      /*@editable*/padding-bottom:45px;
+      /*@editable*/padding-top:12px;
+      /*@editable*/padding-bottom:12px;
     }
   /*
   @tab Header
@@ -195,7 +195,7 @@
   @section Header Text
   */
     .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
-      /*@editable*/color:#808080;
+      /*@editable*/color:#757575;
       /*@editable*/font-family:Helvetica;
       /*@editable*/font-size:16px;
       /*@editable*/line-height:150%;
@@ -206,7 +206,7 @@
   @section Header Link
   */
     .headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
-      /*@editable*/color:#00ADD8;
+      /*@editable*/color:#007C89;
       /*@editable*/font-weight:normal;
       /*@editable*/text-decoration:underline;
     }
@@ -215,7 +215,7 @@
   @section Body Container Style
   */
     #templateBody{
-      /*@editable*/background-color:#FFFFFF;
+      /*@editable*/background-color:#ffffff;
       /*@editable*/background-image:none;
       /*@editable*/background-repeat:no-repeat;
       /*@editable*/background-position:center;
@@ -230,7 +230,7 @@
   @section Body Interior Style
   */
     .bodyContainer{
-      /*@editable*/background-color:transparent;
+      /*@editable*/background-color:#transparent;
       /*@editable*/background-image:none;
       /*@editable*/background-repeat:no-repeat;
       /*@editable*/background-position:center;
@@ -245,7 +245,7 @@
   @section Body Text
   */
     .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
-      /*@editable*/color:#808080;
+      /*@editable*/color:#757575;
       /*@editable*/font-family:Helvetica;
       /*@editable*/font-size:16px;
       /*@editable*/line-height:150%;
@@ -256,7 +256,7 @@
   @section Body Link
   */
     .bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
-      /*@editable*/color:#00ADD8;
+      /*@editable*/color:#007C89;
       /*@editable*/font-weight:normal;
       /*@editable*/text-decoration:underline;
     }
@@ -272,8 +272,8 @@
       /*@editable*/background-size:cover;
       /*@editable*/border-top:0;
       /*@editable*/border-bottom:0;
-      /*@editable*/padding-top:53px;
-      /*@editable*/padding-bottom:53px;
+      /*@editable*/padding-top:45px;
+      /*@editable*/padding-bottom:63px;
     }
   /*
   @tab Footer
@@ -327,12 +327,17 @@
     }
 
 } @media only screen and (max-width: 480px){
+    .mcnRetinaImage{
+      max-width:100% !important;
+    }
+
+} @media only screen and (max-width: 480px){
     .mcnImage{
       width:100% !important;
     }
 
 } @media only screen and (max-width: 480px){
-    .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCardRightTextContentContainer{
+    .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImageCardRightImageContentContainer{
       max-width:100% !important;
       width:100% !important;
     }
@@ -353,7 +358,7 @@
     }
 
 } @media only screen and (max-width: 480px){
-    .mcnImageCardTopImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent{
+    .mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent{
       padding-top:18px !important;
     }
 
@@ -483,25 +488,25 @@
 
 }</style></head>
     <body>
-    <!--*|IF:MC_PREVIEW_TEXT|*-->
-    <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></span><!--<![endif]-->
-    <!--*|END:IF|*-->
+        <!--*|IF:MC_PREVIEW_TEXT|*-->
+        <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></span><!--<![endif]-->
+        <!--*|END:IF|*-->
         <center>
             <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
                 <tr>
                     <td align="center" valign="top" id="bodyCell">
                         <!-- BEGIN TEMPLATE // -->
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <td align="center" valign="top" id="templateHeader" data-template-container>
-                  <!--[if gte mso 9]>
-                  <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-                  <tr>
-                  <td align="center" valign="top" width="600" style="width:600px;">
-                  <![endif]-->
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-                    <tr>
-                                      <td valign="top" class="headerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+                            <tr>
+                                <td align="center" valign="top" id="templateHeader" data-template-container>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                    <tr>
+                                    <td align="center" valign="top" width="600" style="width:600px;">
+                                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top" class="headerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
     <tbody class="mcnImageBlockOuter">
             <tr>
                 <td valign="top" style="padding:9px" class="mcnImageBlockInner">
@@ -510,7 +515,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
 
 
-                                        <img align="center" alt="" src="https://gallery.mailchimp.com/0cf9ba96d0948821f414239a9/images/ef5341a0-cd06-48db-a7b7-a0f284c5023e.png" width="400" style="max-width:400px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://gallery.mailchimp.com/70f90ba03a03d227853c5a0f6/images/d6a49d25-5076-4f92-b8fe-d7fae6cef0f2.png" width="95.88000000000001" style="max-width:1200px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnRetinaImage">
 
 
                             </td>
@@ -519,7 +524,26 @@
                 </td>
             </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" id="templateBody" data-template-container>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                    <tr>
+                                    <td align="center" valign="top" width="600" style="width:600px;">
+                                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top" class="bodyContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
@@ -534,9 +558,15 @@
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; font-size: 13px;">
 
-                            <h1>Your presence&nbsp;matter.</h1>
+                            <h3 style="text-align: center;">Technology will solve poverty.</h3>
+
+<p style="text-align: center; font-size: 13px;">Nobody&nbsp;can see and face the <strong>120&nbsp;millions homeless people</strong>.<br>
+However if we, each, help one per year, we solve 70 times poverty.<br>
+That's why we give them visibility and&nbsp;rehumanize with RiSE.&nbsp;&nbsp;<br>
+<br>
+Start to watch two simple&nbsp;<strong>great features</strong> RiSE platform allow you to do.</p>
 
                         </td>
                     </tr>
@@ -552,77 +582,55 @@
             </td>
         </tr>
     </tbody>
-</table></td>
-                    </tr>
-                  </table>
-                  <!--[if gte mso 9]>
-                  </td>
-                  </tr>
-                  </table>
-                  <![endif]-->
-                </td>
-                            </tr>
-              <tr>
-                <td align="center" valign="top" id="templateBody" data-template-container>
-                  <!--[if gte mso 9]>
-                  <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-                  <tr>
-                  <td align="center" valign="top" width="600" style="width:600px;">
-                  <![endif]-->
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-                    <tr>
-                                      <td valign="top" class="bodyContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
-    <tbody class="mcnImageBlockOuter">
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageGroupBlock">
+    <tbody class="mcnImageGroupBlockOuter">
+
             <tr>
-                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
-                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
-                        <tbody><tr>
-                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                <td valign="top" style="padding:9px" class="mcnImageGroupBlockInner">
 
+                    <table align="left" width="273" border="0" cellpadding="0" cellspacing="0" class="mcnImageGroupContentContainer">
+                            <tbody><tr>
+                                <td class="mcnImageGroupContent" valign="top" style="padding-left: 9px; padding-top: 0; padding-bottom: 0;">
 
-                                        <img align="center" alt="" src="https://gallery.mailchimp.com/0cf9ba96d0948821f414239a9/images/7d63ae61-3f48-4967-89e3-e4ad944a1f4f.png" width="564" style="max-width:1268px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    <a href="https://vimeo.com/user108745255/review/392229019/c72c22db7a" title="" class="" target="_blank">
+                                        <img alt="" src="https://mcusercontent.com/70f90ba03a03d227853c5a0f6/images/ddc9363f-1e5d-4306-8310-b8bc961d2950.png" width="264" style="max-width: 800px; padding-bottom: 0px; border: 1px none; border-radius: 11%;" class="mcnImage">
+                                    </a>
 
+                                </td>
+                            </tr>
+                        </tbody></table>
 
-                            </td>
-                        </tr>
-                    </tbody></table>
+                    <table align="right" width="273" border="0" cellpadding="0" cellspacing="0" class="mcnImageGroupContentContainer">
+                            <tbody><tr>
+                                <td class="mcnImageGroupContent" valign="top" style="padding-right: 9px; padding-top: 0; padding-bottom: 0;">
+
+                                    <a href="https://vimeo.com/user108745255/review/392230199/5b7e80addc" title="" class="" target="_blank">
+                                        <img alt="" src="https://mcusercontent.com/70f90ba03a03d227853c5a0f6/images/f9a4f429-4c30-4c18-9b0f-20abdeda5c0d.png" width="264" style="max-width: 800px; padding-bottom: 0px; border: 1px none; border-radius: 11%;" class="mcnImage">
+                                    </a>
+
+                                </td>
+                            </tr>
+                        </tbody></table>
+
                 </td>
             </tr>
+
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+    <tbody class="mcnDividerBlockOuter">
         <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-                <!--[if mso]>
-        <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-        <tr>
-        <![endif]-->
-
-        <!--[if mso]>
-        <td valign="top" width="600" style="width:600px;">
-        <![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+            <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
                     <tbody><tr>
-
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-                            <h3 style="text-align: center;">We&nbsp;exist to&nbsp;reduce the worldwide poverty.&nbsp;</h3>
-
-<p><span style="font-size:14px">Warm Welcome <strong>Riser</strong> !!! WE&nbsp;refer to you and me that offer from a minute discussions&nbsp;to hospitality to people in need.&nbsp;<strong>RiSE</strong>&nbsp;is set up and running thanks to people time and kindness actions, no one dollar here (and happy about that !!!).<br>
-<br>
-<strong>Words of Mouth</strong> has been&nbsp;so far our best way to recruit more people time and kindness. Unfortunately&nbsp;we do not get your mouth. May you give us an hand ?</span></p>
-
+                        <td>
+                            <span></span>
                         </td>
                     </tr>
                 </tbody></table>
-        <!--[if mso]>
-        </td>
-        <![endif]-->
-
-        <!--[if mso]>
-        </tr>
-        </table>
-        <![endif]-->
+<!--
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
             </td>
         </tr>
     </tbody>
@@ -630,11 +638,11 @@
     <tbody class="mcnButtonBlockOuter">
         <tr>
             <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #00ADD8;">
+                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 7px;background-color: #FF847C;">
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Helvetica; font-size: 18px; padding: 18px;">
-                                <a class="mcnButton " title="Recommand Rise to  friend" href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=http%3A%2F%2Fwww.risekindness.com%2F&display=popup&ref=plugin&src=share_button" target="_self" style="font-weight: bold;letter-spacing: -0.5px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;"> Recommand Rise to friends</a>
+                                <a class="mcnButton " title="Watch RiSE in real situation" href="https://vimeo.com/392164367" target="_self" style="font-weight: bold;letter-spacing: -0.5px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Watch RiSE in real situation</a>
                             </td>
                         </tr>
                     </tbody>
@@ -642,7 +650,26 @@
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width:100%;">
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" id="templateFooter" data-template-container>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                    <tr>
+                                    <td align="center" valign="top" width="600" style="width:600px;">
+                                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top" class="footerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width:100%;">
     <tbody class="mcnFollowBlockOuter">
         <tr>
             <td align="center" valign="top" style="padding:9px" class="mcnFollowBlockInner">
@@ -664,17 +691,29 @@
                                         <td align="center" valign="top">
                                         <![endif]-->
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
 
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
                                                 <tbody><tr>
-                                                    <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:9px;">
-                                                        <a href="https://www.facebook.com/WeRisers/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+                                                    <td valign="top" style="padding-right:10px; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://www.instagram.com/rise_homeless/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-instagram-48.png" alt="Link" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+
+
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
                                                     </td>
                                                 </tr>
-
-
                                             </tbody></table>
-
 
                                         <!--[if mso]>
                                         </td>
@@ -684,17 +723,29 @@
                                         <td align="center" valign="top">
                                         <![endif]-->
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
 
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
                                                 <tbody><tr>
-                                                    <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:9px;">
-                                                        <a href="https://www.instagram.com/rise_homeless_giving/?hl=en" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-instagram-96.png" alt="Instagram" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+                                                    <td valign="top" style="padding-right:10px; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://www.facebook.com/WeRisers/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-facebook-48.png" alt="Facebook" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+
+
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
                                                     </td>
                                                 </tr>
-
-
                                             </tbody></table>
-
 
                                         <!--[if mso]>
                                         </td>
@@ -704,17 +755,29 @@
                                         <td align="center" valign="top">
                                         <![endif]-->
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
 
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
                                                 <tbody><tr>
-                                                    <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:9px;">
-                                                        <a href="https://www.linkedin.com/company-beta/25009956/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-linkedin-96.png" alt="LinkedIn" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+                                                    <td valign="top" style="padding-right:10px; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://medium.com/rise-homeless-giving" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-medium-48.png" alt="Medium" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+
+
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
                                                     </td>
                                                 </tr>
-
-
                                             </tbody></table>
-
 
                                         <!--[if mso]>
                                         </td>
@@ -724,17 +787,29 @@
                                         <td align="center" valign="top">
                                         <![endif]-->
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
 
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
                                                 <tbody><tr>
-                                                    <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:0; padding-bottom:9px;">
-                                                        <a href="https://github.com/AllanBallester/RiSE" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-github-96.png" alt="GitHub" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+                                                    <td valign="top" style="padding-right:0; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://www.linkedin.com/company/25009956/admin/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-linkedin-48.png" alt="LinkedIn" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+
+
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
                                                     </td>
                                                 </tr>
-
-
                                             </tbody></table>
-
 
                                         <!--[if mso]>
                                         </td>
@@ -757,26 +832,23 @@
             </td>
         </tr>
     </tbody>
-</table></td>
-                    </tr>
-                  </table>
-                  <!--[if gte mso 9]>
-                  </td>
-                  </tr>
-                  </table>
-                  <![endif]-->
-                </td>
-                            </tr>
-                            <tr>
-                <td align="center" valign="top" id="templateFooter" data-template-container>
-                  <!--[if gte mso 9]>
-                  <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-                  <tr>
-                  <td align="center" valign="top" width="600" style="width:600px;">
-                  <![endif]-->
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-                    <tr>
-                                      <td valign="top" class="footerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+    <tbody class="mcnButtonBlockOuter">
+        <tr>
+            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 1px none;border-radius: 11px;background-color: #A59A9A;">
+                    <tbody>
+                        <tr>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; padding: 12px;">
+                                <a class="mcnButton " title="SHARE US ON FACEBOOK" href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&amp;sdk=joey&amp;u=http%3A%2F%2Fwww.risekindness.com%2F&amp;display=popup&amp;ref=plugin&amp;src=share_button" target="_blank" style="font-weight: normal;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">SHARE US ON FACEBOOK</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
     <tbody class="mcnDividerBlockOuter">
         <tr>
             <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
@@ -794,15 +866,65 @@
             </td>
         </tr>
     </tbody>
-</table></td>
-                    </tr>
-                  </table>
-                  <!--[if gte mso 9]>
-                  </td>
-                  </tr>
-                  </table>
-                  <![endif]-->
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+
+
+                                        <img align="center" alt="" src="https://gallery.mailchimp.com/70f90ba03a03d227853c5a0f6/images/d6a49d25-5076-4f92-b8fe-d7fae6cef0f2.png" width="169.2" style="max-width:1200px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+
+
+                            </td>
+                        </tr>
+                    </tbody></table>
                 </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+                <!--[if mso]>
+        <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+        <tr>
+        <![endif]-->
+
+        <!--[if mso]>
+        <td valign="top" width="600" style="width:600px;">
+        <![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+
+                            Copyright © 2020, RiSE Homeless Giving, All Rights Reserved
+                        </td>
+                    </tr>
+                </tbody></table>
+        <!--[if mso]>
+        </td>
+        <![endif]-->
+
+        <!--[if mso]>
+        </tr>
+        </table>
+        <![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
                             </tr>
                         </table>
                         <!-- // END TEMPLATE -->
