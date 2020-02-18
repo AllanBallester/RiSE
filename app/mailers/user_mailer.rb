@@ -22,7 +22,7 @@ class UserMailer < ApplicationMailer
     @homeless = homeless
     @riser = riser
 
-    mail(to: @riser.email, subject: 'Your Action matter')
+    mail(to: @riser.email, subject: 'One less Invisible 👏')
   end
 
   def review(riser, homeless)
