@@ -192,7 +192,7 @@ GEM
       actionmailer (>= 3.0.0)
       postmark (~> 1.10.0)
     public_suffix (3.0.2)
-    puma (3.9.1)
+    puma (3.12.4)
     rack (2.0.3)
     rack-cors (1.0.2)
     rack-protection (2.0.0)
@@ -324,7 +324,7 @@ DEPENDENCIES
   omniauth-facebook
   pg
   postmark-rails
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.5)
   rails-assets-underscore!
   rails-i18n (~> 5.0.0)
