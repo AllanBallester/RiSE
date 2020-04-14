@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "riselogo22.png" %>
+    <%= image_tag "poureuxlemouvlogooo_asjz8z.png" %>
   <% end %>
 
 
@@ -10,20 +10,20 @@
 
      <div class="navbar-wagon-right ">
       <!--<a href="https://www.patreon.com/allanballester" target="blank" class="navbar-wagon-item navbar-wagon-link btn-yours4"> <i class="fab fa-patreon"></i> Become a Patron </a> %>-->
-      <%= link_to t("Donate"), pages_donate_path , class: "navbar-wagon-item navbar-wagon-link btn-yours3" %>
+      <!-- <%= link_to t("Donate"), pages_donate_path , class: "navbar-wagon-item navbar-wagon-link btn-yours3" %> -->
     </div>
 
-      <div class="fb-share-button goright" data-href="http://www.risekindness.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.risekindness.com%2F&amp;src=sdkpreparse">Share</a></div>
+      <div class="fb-share-button" data-href="https://vimeo.com/399275414" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvimeo.com%2F399275414&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 
-      <!-- <div class="navbar-wagon-right hidden-xs ">
-        <%= link_to t("Developers"), pages_developers_path , class: "navbar-wagon-item navbar-wagon-link "%>
+       <div class="navbar-wagon-right ">
+        <%= link_to t("Le Mouv"), pages_developers_path , class: "navbar-wagon-item navbar-wagon-link "%>
       </div>
 
-      <div class="navbar-wagon-right ">
-        <%= link_to t("Risers"), pages_risers_path , class: "navbar-wagon-item navbar-wagon-link " %>
+     <!--  <div class="navbar-wagon-right ">
+        <%= link_to t("Join Us"), pages_risers_path , class: "navbar-wagon-item navbar-wagon-link " %>
       </div> -->
 
-  <div class="navbar-wagon-item hidden-xs">
+  <!-- <div class="navbar-wagon-item hidden-xs">
           <div class="dropdown">
             <div class="dropdown-toggle" style="color: #333" data-toggle="dropdown" id="navbar-wagon-menu"><%= I18n.locale.upcase %>
             </div>
@@ -36,11 +36,11 @@
       <li><%= link_to "Spanish", request.query_parameters.merge(locale: :es) %></li>
     </ul>
     </div>
-    </div>
+    </div> -->
 
 
 
-    <% if riser_signed_in? %>
+   <!--<% if riser_signed_in? %>
 
       <!-- Links when logged in -->
 
@@ -67,7 +67,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link hidden-xs" %>
+      <!-- <%= link_to t(".sign_in", default: "Login"), new_riser_session_path, class: "navbar-wagon-item navbar-wagon-link hidden-xs" %> -->
     <% end %>
   </div>
 
