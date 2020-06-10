@@ -114,7 +114,7 @@ GEM
       rack-cors
       rails (>= 4.0)
       useragent
-    geocoder (1.4.4)
+    geocoder (1.6.1)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
